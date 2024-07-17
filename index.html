@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./output/output.css">
+    <script src="https://kit.fontawesome.com/43bdb0fd4f.js" crossorigin="anonymous"></script>
     <link
         href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
@@ -13,25 +14,53 @@
 
 <body>
     <!-- =========================navigation bar========================= -->
-    <nav class="flex justify-between items-center px-[80px] py-[33px] bg-[#F8F8F1]">
-        <!-- logo -->
-        <div class="flex items-center gap-[10px]">
-            <img src="./assets/logo.png" alt="logo">
-            <div class="flex flex-col justify-center">
-                <p class="text-[35px] leading-[30px] text-[#52479E] font-bold">OMNIC</p>
-                <p class="flex justify-between text-[#52479E] text-sm">
-                    <span>C</span>
-                    <span>L</span>
-                    <span>I</span>
-                    <span>P</span>
-                    <span>P</span>
-                    <span>R</span>
-                </p>
+    <nav
+        class="bg-[#F8F8F1] flex justify-between items-center px-4 sm:px-8 md:px-12 2xl:px-20 py-4 md:py-6 14i:py-8 15i:py-[33px]">
+        <div class="flex items-center gap-4 flex-row-reverse">
+            <!-- logo -->
+            <div class="flex items-center gap-2 14i:gap-[10px]">
+                <img src="./assets/logo.png" alt="logo" class="w-8 md:w-12 3xl:w-[65px] h-8 md:h-12 3xl:h-[65px]">
+                <div class="flex flex-col justify-center">
+                    <p
+                        class="text-[16px] md:text-[20px] leading-[10px] md:leading-[20px] 15i:text-[35px] 15i:leading-[30px] text-[#52479E] font-bold">
+                        OMNIC
+                    </p>
+                    <p class="flex justify-between text-[#52479E] text-[10px] md:text-sm leading-[12px]">
+                        <span>C</span>
+                        <span>L</span>
+                        <span>I</span>
+                        <span>P</span>
+                        <span>P</span>
+                        <span>R</span>
+                    </p>
+                </div>
+            </div>
+            <!-- -------------list icon for small device----------- -->
+            <div class="md:hidden text-[30px]" onclick="showSidebar()">
+                <i class="fa-solid fa-list"></i>
             </div>
         </div>
-        <!-- menu -->
-        <div>
-            <ul class="flex justify-center items-center gap-[50px] text-[#262149] text-[24px]">
+        <!-- -------------menu for learge device-------------->
+        <div class="hidden md:block">
+            <ul
+                class="flex justify-center items-center md:gap-[30px] 14i:gap-[50px] text-[#262149] md:text-[18px] 15i:text-[24px]">
+                <li>Home</li>
+                <li>Service</li>
+                <li>Price</li>
+                <li>Sample</li>
+            </ul>
+        </div>
+        <!-- --------------mane for small device------------ -->
+        <div class="md:hidden absolute top-0 left-0 bottom-0 bg-[#5A4EAE] pt-4 w-0 overflow-x-hidden transition-width ease-in-out duration-300"
+            id="sidebar">
+            <div class="flex justify-between px-8">
+                <div class="text-2xl font-bold text-white">
+                    <p>Omnic</p>
+                    <p>Clipper</p>
+                </div>
+                <span onclick="hideSidebar()"><i class="fa-solid fa-xmark"></i></span>
+            </div>
+            <ul class="text-xl text-gray-200 font-semibold mt-20 px-8">
                 <li>Home</li>
                 <li>Service</li>
                 <li>Price</li>
@@ -39,43 +68,22 @@
             </ul>
         </div>
         <!-- order -->
-        <button class="text-[20px] text-[#EFEDF7] bg-[#5A4EAE] px-8 py-[22px] rounded-lg">Make an Order</button>
+        <button
+            class=" text-[#EFEDF7] bg-[#5A4EAE] text-sm 15i:text-[20px] 15i:leading-[21px] px-4 sm:px-6 py-2 sm:py-4 15i:px-8 15i:py-[22px] rounded-[10px]">
+            Make an Order
+        </button>
     </nav>
 
-
-    <main class="px-20">
-        <!-- ======================Banner section========================= -->
-        <section>
-            <div class="flex justify-between gap-20 my-[50px]">
-                <!-- left part -->
-                <div class="flex-1 flex flex-col justify-center">
-                    <p class="text-[#5A4EAE] text-[90px] leading-[85px] font-extrabold">
-                        Expert <br>
-                        Image <br>
-                        <span class="text-[#F76D4A]">Smmetric</span>
-                    </p>
-                    <p class="text-[18px] text-[#262149]">
-                        Welcome to Dot Clipping, your go-to photo-editing agency for all your image editing needs. At
-                        Dot
-                        Clipping, Welcome to
-                        Dot Clipping, your go-to photo-editing agency for all your image editing we
-                    </p>
-
-                    <div class="grid grid-cols-2 gap-2 w-fit mt-12">
-                        <button
-                            class="w-fit px-8 py-4 rounded-xl border-[1px] border-[#262149] text-[#262149] font-semibold">
-                            Start Free Trial
-                        </button>
-                        <img src="./assets/btn.png" alt="btn">
-                    </div>
-                </div>
-                <!-- right part -->
-                <div class="flex-1 flex justify-end">
-                    <img src="./assets/banner.png" alt="banner" class="max-w-[450px]">
-                </div>
-            </div>
-        </section>
-    </main>
+    <script>
+        const showSidebar = () => {
+            document.getElementById("sidebar").classList.remove("w-0")
+            document.getElementById("sidebar").classList.add("w-[70vw]")
+        }
+        const hideSidebar = () => {
+            document.getElementById("sidebar").classList.remove("w-[70vw]")
+            document.getElementById("sidebar").classList.add("w-0")
+        }
+    </script>
 </body>
 
 </html>
