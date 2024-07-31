@@ -1,1 +1,1 @@
-### Live link : https://mehedihasan712277.github.io/Omnic_Clipper/
+### Live link : https://mehedihasan712277.github.io/Omnic_Clipper_Tamplate/
