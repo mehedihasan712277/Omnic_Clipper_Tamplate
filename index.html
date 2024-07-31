@@ -10,6 +10,29 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
 </head>
 
 <body>
@@ -547,6 +570,25 @@
                     Clipping, we understand Welcome
                 </p>
             </div>
+
+            <div>
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">Slide 1</div>
+                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">Slide 3</div>
+                        <div class="swiper-slide">Slide 4</div>
+                        <div class="swiper-slide">Slide 5</div>
+                        <div class="swiper-slide">Slide 6</div>
+                        <div class="swiper-slide">Slide 7</div>
+                        <div class="swiper-slide">Slide 8</div>
+                        <div class="swiper-slide">Slide 9</div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
         </section>
 
         <!-- ===========================contact us============================== -->
@@ -584,9 +626,9 @@
     </main>
 
     <footer class="bg-[#262149] p-4 pt-12 md:p-8 md:pt-20 14i:p-20 14i:pt-[160px] max-w-[1510px] mx-auto">
-        <div class="grid grid-cols-2 gap-4 justify-items-center lg:flex lg:justify-between">
+        <div class="grid grid-cols-2 bg-green-300 gap-2 mv:gap-4 justify-items-center lg:flex lg:justify-between">
             <!-- part 1 -->
-            <div class="w-[300px] lg:w-fit">
+            <div class="bg-red-300  w-[140px] ml:w-[180px] mv:w-[250px] md:w-[300px] lg:w-fit">
                 <!-- logo -->
                 <div class="flex items-center gap-2 14i:gap-[10px]">
                     <img src="./assets/logo2.png" alt="logo" class="w-8 md:w-12 3xl:w-[65px] h-8 md:h-12 3xl:h-[65px]">
@@ -613,7 +655,8 @@
             </div>
 
             <!-- part 2 -->
-            <div class="w-[300px] lg:w-fit space-y-4 lg:space-y-6 14i:space-y-[30px]">
+            <div
+                class="bg-green-700  w-[140px] ml:w-[180px] mv:w-[250px] md:w-[300px] lg:w-fit space-y-4 lg:space-y-6 14i:space-y-[30px]">
                 <p class="text-[#FEFEFE] text-xl 14i:text-[28px] 14i:leading-[30px]">Company</p>
                 <ul class="text-[#EFEDF7] text-sm 14i:text-xl space-y-2 lg:space-y-4 14i:space-y-[30px]">
                     <li><a href="#">About us</a></li>
@@ -625,7 +668,7 @@
             </div>
 
             <!-- part 3 -->
-            <div class="space-y-[30px] w-[300px] lg:w-fit">
+            <div class="space-y-4 md:space-y-[30px]  w-[140px] ml:w-[180px] mv:w-[250px] md:w-[300px] lg:w-fit">
                 <p class="text-[#FEFEFE] text-xl 14i:text-[28px] 14i:leading-[30px]">Service</p>
                 <ul class="text-[#EFEDF7] text-sm 14i:text-xl space-y-2 lg:space-y-4 14i:space-y-[30px]">
                     <li><a href="#">Background Remove</a></li>
@@ -638,12 +681,31 @@
             </div>
 
             <!-- part 4 -->
-            <div class="flex flex-col gap-5 w-[300px] lg:w-fit">
+            <div class="flex flex-col gap-3 md:gap-5  w-[140px] ml:w-[180px] mv:w-[250px] md:w-[300px] lg:w-fit">
                 <p class="text-[#FEFEFE] text-xl 14i:text-[28px] 14i:leading-[30px]">Contact Us</p>
-                <input type="email" class="px-5 py-4 bg-[#FEFEFE] rounded-[10px] w-[227px]">
+                <input type="email" class="px-5 py-4 bg-[#FEFEFE] rounded-[10px]  w-[140px] ml:w-[180px] mv:w-[227px]">
                 <button
-                    class="bg-[#F8EC80] rounded-[10px] py-[22px] w-[227px] text-[#262149] font-semibold">Sent</button>
+                    class="bg-[#F8EC80] rounded-[10px] py-[22px]  w-[140px] ml:w-[180px] mv:w-[227px] text-[#262149] font-semibold">Sent</button>
                 <p class="text-[#FEFEFE] text-xl 14i:text-[28px] 14i:leading-[30px]">Social Media</p>
+
+                <!-- icons -->
+                <div class="flex gap-4">
+                    <a href="#">
+                        <p class="bg-white text-[#262149] w-8 h-8 rounded-full flex justify-center items-center">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </p>
+                    </a>
+                    <a href="#">
+                        <p class="bg-white text-[#262149] w-8 h-8 rounded-full flex justify-center items-center">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </p>
+                    </a>
+                    <a href="#">
+                        <p class="bg-white text-[#262149] w-8 h-8 rounded-full flex justify-center items-center">
+                            <i class="fa-brands fa-instagram"></i>
+                        </p>
+                    </a>
+                </div>
             </div>
         </div>
 
@@ -658,7 +720,11 @@
             </div>
         </div>
     </footer>
+
+    <!-- script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
+        // sidebar handling---------------
         const showSidebar = () => {
             document.getElementById("sidebar").classList.remove("w-0")
             document.getElementById("sidebar").classList.add("w-[70vw]")
@@ -667,6 +733,13 @@
             document.getElementById("sidebar").classList.remove("w-[70vw]")
             document.getElementById("sidebar").classList.add("w-0")
         }
+        // swiper-------------------------
+        var swiper = new Swiper(".mySwiper", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
     </script>
 </body>
 
