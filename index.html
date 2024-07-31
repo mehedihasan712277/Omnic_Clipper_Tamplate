@@ -96,24 +96,26 @@
                 <i class="fa-solid fa-list"></i>
             </div>
         </div>
+
         <!-- -------------menu for learge device-------------->
         <div class="hidden md:block">
             <ul
                 class="flex justify-center items-center md:gap-[30px] 14i:gap-[50px] text-[#262149] md:text-[18px] 15i:text-[24px]">
-                <li>
-                    <a href="/">Home</a>
+                <li class="transition-all ease-in-out duration-150 hover:text-[#5A4EaE]">
+                    <a href="./index.html">Home</a>
                 </li>
-                <li>
-                    <a href="/">Service</a>
+                <li class="transition-all ease-in-out duration-150 hover:text-[#5A4EaE]">
+                    <a href="./src/pages/service/service.html">Service</a>
                 </li>
-                <li>
-                    <a href="/">Price</a>
+                <li class="transition-all ease-in-out duration-150 hover:text-[#5A4EaE]">
+                    <a href="./src/pages/pricing/pricingImage.html">Price</a>
                 </li>
-                <li>
-                    <a href="/">Sample</a>
+                <li class="transition-all ease-in-out duration-150 hover:text-[#5A4EaE]">
+                    <a href="./src/pages/service/servicePortfolio.html">Sample</a>
                 </li>
             </ul>
         </div>
+
         <!-- --------------mane for small device------------ -->
         <div class="md:hidden absolute top-0 left-0 bottom-0 bg-[#5A4EAE] pt-4 w-0 overflow-x-hidden transition-width ease-in-out duration-300"
             id="sidebar">
@@ -125,18 +127,30 @@
                 <span onclick="hideSidebar()"><i class="fa-solid fa-xmark"></i></span>
             </div>
             <ul class="text-xl text-gray-200 font-semibold mt-20 px-8">
-                <li>Home</li>
-                <li>Service</li>
-                <li>Price</li>
-                <li>Sample</li>
+                <li>
+                    <a href="./index.html">Home</a>
+                </li>
+                <li>
+                    <a href="./src/pages/service/service.html">Service</a>
+                </li>
+                <li>
+                    <a href="./src/pages/pricing/pricingImage.html">Price</a>
+                </li>
+                <li>
+                    <a href="./src/pages/service/servicePortfolio.html">Sample</a>
+                </li>
             </ul>
         </div>
+
         <!-- order -->
         <button
-            class=" text-[#EFEDF7] bg-[#5A4EAE] text-sm 15i:text-[20px] 15i:leading-[21px] px-4 sm:px-6 py-2 sm:py-4 15i:px-8 15i:py-[22px] rounded-[10px] transition-all ease-in-out duration-150 active:scale-95">
+            class=" text-[#EFEDF7] bg-[#5A4EAE] text-sm 15i:text-[20px] 15i:leading-[21px] px-4 sm:px-6 py-2 sm:py-4 15i:px-8 15i:py-[22px] rounded-[10px] transition-all ease-in-out duration-150 active:scale-95 hover:bg-opacity-80 hover:text-white">
             Make an Order
         </button>
     </nav>
+
+
+
 
     <main class="max-w-[1510px] mx-auto">
         <!-- ============================Banner section========================= -->
@@ -175,7 +189,8 @@
         </section>
 
         <!-- ============================service section======================== -->
-        <section class="bg-[#5A4EAE] px-4 15i:px-[80px] py-20 14i:py-[140px] space-y-10 14i:space-y-[50px]">
+        <section id="service"
+            class="bg-[#5A4EAE] px-4 15i:px-[80px] py-20 14i:py-[140px] space-y-10 14i:space-y-[50px]">
             <!-- heading part -->
             <div class="flex flex-col items-center text-center">
                 <p class="text-[#F8EC80] font-bold text-3xl lg:text-5xl 14i:text-[88px] 14i:leading-[92px]">
@@ -324,7 +339,7 @@
         </section>
 
         <!-- ===========================about us================================ -->
-        <section
+        <section id="about"
             class="flex flex-col md:flex-row justify-center items-center gap-[50px] 15i:gap-[150px] w-fit mx-auto px-4 sm:px-12 14i:px-20 py-20 14i:py-[120px]">
             <!-- image -->
             <div
@@ -721,7 +736,7 @@
         </section>
 
         <!-- ===========================contact us============================== -->
-        <section class="bg-[#EFEDF7] px-4 py-8 md:px-12 md:py-20 15i:py-[120px]">
+        <section id="contact" class="bg-[#EFEDF7] px-4 py-8 md:px-12 md:py-20 15i:py-[120px]">
             <!-- heading -->
             <div>
                 <p class="text-[#262149] text-center font-bold text-3xl lg:text-5xl 14i:text-[88px] 14i:leading-[92px]">
@@ -752,6 +767,9 @@
             </div>
         </section>
     </main>
+
+
+
 
     <footer class="bg-[#262149] p-4 pt-12 md:p-8 md:pt-20 14i:p-20 14i:pt-[160px] max-w-[1510px] mx-auto">
         <div class="grid grid-cols-2 gap-2 mv:gap-4 justify-items-center lg:flex lg:justify-between">
@@ -787,11 +805,11 @@
                 class="w-[140px] ml:w-[180px] mv:w-[250px] md:w-[300px] lg:w-fit space-y-4 lg:space-y-6 14i:space-y-[30px]">
                 <p class="text-[#FEFEFE] text-xl 14i:text-[28px] 14i:leading-[30px]">Company</p>
                 <ul class="text-[#EFEDF7] text-sm 14i:text-xl space-y-2 lg:space-y-4 14i:space-y-[30px]">
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact us</a></li>
-                    <li><a href="#">Our Blogs</a></li>
-                    <li><a href="#">Free Trial</a></li>
+                    <li><a href="#about">About us</a></li>
+                    <li><a href="#service">Services</a></li>
+                    <li><a href="#contact">Contact us</a></li>
+                    <li><a href="./src/pages/blog/blog.html">Our Blogs</a></li>
+                    <li><a href="./src/pages/pricing/order.html">Free Trial</a></li>
                 </ul>
             </div>
 
@@ -813,10 +831,12 @@
             <div
                 class="flex flex-col gap-3 md:gap-5  w-[140px] ml:w-[180px] mv:w-[250px] md:w-[300px] lg:w-fit mt-6 lg:mt-0">
                 <p class="text-[#FEFEFE] text-xl 14i:text-[28px] 14i:leading-[30px]">Contact Us</p>
-                <input type="email"
+                <input type="email" placeholder="Your Email"
                     class="px-5 py-3 lg:py-4 bg-[#FEFEFE] rounded-[10px]  w-[140px] ml:w-[180px] mv:w-[227px]">
                 <button
-                    class="bg-[#F8EC80] rounded-[10px] py-4 lg:py-[22px]  w-[140px] ml:w-[180px] mv:w-[227px] text-[#262149] font-semibold">Sent</button>
+                    class="bg-[#F8EC80] rounded-[10px] py-4  w-[140px] ml:w-[180px] mv:w-[227px] text-[#262149] font-semibold transition-all ease-in-out duration-150 active:scale-95 hover:bg-opacity-80">
+                    Send
+                </button>
                 <p class="text-[#FEFEFE] text-xl 14i:text-[28px] 14i:leading-[30px]">Social Media</p>
 
                 <!-- icons -->

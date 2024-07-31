@@ -1216,9 +1216,18 @@ video {
   --tw-bg-opacity: 0.8;
 }
 
+.hover\:bg-opacity-90:hover {
+  --tw-bg-opacity: 0.9;
+}
+
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.hover\:text-\[\#5A4EaE\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(90 78 174 / var(--tw-text-opacity));
 }
 
 .focus\:border-white:focus {
@@ -1578,6 +1587,11 @@ video {
   .lg\:py-\[22px\] {
     padding-top: 22px;
     padding-bottom: 22px;
+  }
+
+  .lg\:py-\[20px\] {
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   .lg\:text-5xl {
