@@ -605,6 +605,10 @@ video {
   margin-top: 2rem;
 }
 
+.mt-40 {
+  margin-top: 10rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -884,6 +888,11 @@ video {
   border-color: rgb(254 254 254 / var(--tw-border-opacity));
 }
 
+.border-\[\#52479E\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(82 71 158 / var(--tw-border-opacity));
+}
+
 .bg-\[\#262149\] {
   --tw-bg-opacity: 1;
   background-color: rgb(38 33 73 / var(--tw-bg-opacity));
@@ -927,6 +936,11 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#52479E\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(82 71 158 / var(--tw-bg-opacity));
 }
 
 .p-4 {
@@ -1251,6 +1265,11 @@ video {
   background-color: rgb(38 33 73 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-\[\#FEFEFE\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 254 254 / var(--tw-bg-opacity));
+}
+
 .hover\:bg-opacity-65:hover {
   --tw-bg-opacity: 0.65;
 }
@@ -1271,6 +1290,16 @@ video {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.hover\:text-\[\#52479E\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(82 71 158 / var(--tw-text-opacity));
+}
+
+.hover\:text-\[\#FEFEFE\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(254 254 254 / var(--tw-text-opacity));
 }
 
 .focus\:border-white:focus {
@@ -1385,6 +1414,11 @@ video {
     padding-bottom: 22px;
   }
 
+  .sm\:px-32 {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
   .sm\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -1442,6 +1476,10 @@ video {
     height: 350px;
   }
 
+  .md\:h-\[500px\] {
+    height: 500px;
+  }
+
   .md\:w-12 {
     width: 3rem;
   }
@@ -1461,6 +1499,10 @@ video {
   .md\:w-fit {
     width: -moz-fit-content;
     width: fit-content;
+  }
+
+  .md\:w-\[500px\] {
+    width: 500px;
   }
 
   .md\:max-w-\[350px\] {
@@ -1796,6 +1838,10 @@ video {
 }
 
 @media (min-width: 1360px) {
+  .\31 4i\:mt-20 {
+    margin-top: 5rem;
+  }
+
   .\31 4i\:h-\[200px\] {
     height: 200px;
   }
