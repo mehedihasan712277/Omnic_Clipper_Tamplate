@@ -1566,6 +1566,11 @@ video {
     line-height: 1.75rem;
   }
 
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
   .md\:leading-\[20px\] {
     line-height: 20px;
   }
@@ -1709,6 +1714,14 @@ video {
   .xl\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .xl\:text-\[32px\] {
+    font-size: 32px;
+  }
+
+  .xl\:leading-\[34px\] {
+    line-height: 34px;
   }
 }
 
