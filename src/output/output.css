@@ -597,10 +597,6 @@ video {
   margin-top: 5rem;
 }
 
-.mt-40 {
-  margin-top: 10rem;
-}
-
 .mt-6 {
   margin-top: 1.5rem;
 }
@@ -1296,11 +1292,6 @@ video {
 }
 
 @media (min-width: 355px) {
-  .mm\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
   .mm\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
