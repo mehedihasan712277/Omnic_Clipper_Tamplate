@@ -2413,6 +2413,11 @@ video {
     padding-bottom: 33px;
   }
 
+  .\31 5i\:py-\[132px\] {
+    padding-top: 132px;
+    padding-bottom: 132px;
+  }
+
   .\31 5i\:pb-\[20px\] {
     padding-bottom: 20px;
   }
