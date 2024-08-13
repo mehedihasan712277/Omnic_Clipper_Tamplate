@@ -673,16 +673,6 @@ video {
   margin-bottom: 50px;
 }
 
-.my-2 {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.my-6 {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -767,25 +757,16 @@ video {
   height: 100%;
 }
 
-.h-4 {
-  height: 1rem;
-}
-
-.h-6 {
-  height: 1.5rem;
-}
-
-.h-fit {
-  height: -moz-fit-content;
-  height: fit-content;
-}
-
 .w-0 {
   width: 0px;
 }
 
 .w-1\/2 {
   width: 50%;
+}
+
+.w-6 {
+  width: 1.5rem;
 }
 
 .w-8 {
@@ -827,14 +808,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-4 {
-  width: 1rem;
-}
-
-.w-6 {
-  width: 1.5rem;
 }
 
 .max-w-\[1510px\] {
@@ -1084,16 +1057,8 @@ video {
   border-width: 1px;
 }
 
-.border-4 {
-  border-width: 4px;
-}
-
 .border-t-\[1px\] {
   border-top-width: 1px;
-}
-
-.border-r-2 {
-  border-right-width: 2px;
 }
 
 .border-\[\#262149\] {
@@ -1119,16 +1084,6 @@ video {
 .border-\[\#FEFEFE\] {
   --tw-border-opacity: 1;
   border-color: rgb(254 254 254 / var(--tw-border-opacity));
-}
-
-.border-green-400 {
-  --tw-border-opacity: 1;
-  border-color: rgb(74 222 128 / var(--tw-border-opacity));
-}
-
-.border-black {
-  --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
 .bg-\[\#262149\] {
@@ -1189,11 +1144,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-green-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(74 222 128 / var(--tw-bg-opacity));
 }
 
 .p-20 {
@@ -1296,10 +1246,6 @@ video {
   padding-bottom: 1rem;
 }
 
-.pb-7 {
-  padding-bottom: 1.75rem;
-}
-
 .pb-8 {
   padding-bottom: 2rem;
 }
@@ -1310,6 +1256,14 @@ video {
 
 .pb-\[30px\] {
   padding-bottom: 30px;
+}
+
+.pl-8 {
+  padding-left: 2rem;
+}
+
+.pr-4 {
+  padding-right: 1rem;
 }
 
 .pt-12 {
@@ -1342,14 +1296,6 @@ video {
 
 .pt-\[30px\] {
   padding-top: 30px;
-}
-
-.pl-8 {
-  padding-left: 2rem;
-}
-
-.pr-4 {
-  padding-right: 1rem;
 }
 
 .text-center {
@@ -1434,6 +1380,10 @@ video {
   text-transform: uppercase;
 }
 
+.leading-6 {
+  line-height: 1.5rem;
+}
+
 .leading-\[10px\] {
   line-height: 10px;
 }
@@ -1460,10 +1410,6 @@ video {
 
 .leading-\[normal\] {
   line-height: normal;
-}
-
-.leading-6 {
-  line-height: 1.5rem;
 }
 
 .text-\[\#000000\] {
@@ -2680,10 +2626,6 @@ video {
 
   .\31 4i\:leading-\[92px\] {
     line-height: 92px;
-  }
-
-  .\31 4i\:leading-\[90px\] {
-    line-height: 90px;
   }
 }
 
