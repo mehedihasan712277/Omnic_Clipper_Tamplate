@@ -618,6 +618,10 @@ video {
   }
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -648,6 +652,10 @@ video {
 
 .z-10 {
   z-index: 10;
+}
+
+.z-\[1000\] {
+  z-index: 1000;
 }
 
 .mx-auto {
@@ -749,6 +757,14 @@ video {
   height: 100%;
 }
 
+.h-4 {
+  height: 1rem;
+}
+
+.h-6 {
+  height: 1.5rem;
+}
+
 .w-0 {
   width: 0px;
 }
@@ -796,6 +812,14 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-4 {
+  width: 1rem;
+}
+
+.w-6 {
+  width: 1.5rem;
 }
 
 .max-w-\[1510px\] {
@@ -980,12 +1004,6 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(54px * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(54px * var(--tw-space-y-reverse));
-}
-
-.space-x-\[18px\] > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(18px * var(--tw-space-x-reverse));
-  margin-left: calc(18px * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .overflow-x-hidden {
@@ -1288,6 +1306,14 @@ video {
   padding-top: 30px;
 }
 
+.pl-8 {
+  padding-left: 2rem;
+}
+
+.pr-4 {
+  padding-right: 1rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1396,6 +1422,10 @@ video {
 
 .leading-\[normal\] {
   line-height: normal;
+}
+
+.leading-6 {
+  line-height: 1.5rem;
 }
 
 .text-\[\#000000\] {
