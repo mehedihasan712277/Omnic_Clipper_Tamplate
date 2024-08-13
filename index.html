@@ -65,6 +65,34 @@
         .swiper-button-disabled::after {
             color: #5A4EAE;
         }
+
+
+        /* -------------typewriter------------- */
+        #typewriter-text {
+            position: relative;
+            border-right: 2px solid transparent;
+            white-space: nowrap;
+            overflow: hidden;
+            /* animation: caret 0.75s steps(1) infinite; */
+        }
+
+        #typewriter-text:after {
+            content: '';
+            height: 70%;
+            width: 1px;
+            position: absolute;
+            right: 0;
+            bottom: 10px;
+            background-color: #000000;
+            overflow: hidden;
+            animation: caret 0.75s steps(1) infinite;
+        }
+
+        @keyframes caret {
+            50% {
+                background-color: transparent;
+            }
+        }
     </style>
 </head>
 
@@ -160,12 +188,14 @@
             <div class="flex justify-between gap-4 14i:gap-20 my-[50px]">
                 <!-- left part -->
                 <div class="flex-1 flex flex-col justify-center ">
-                    <p
+                    <div
                         class="text-[#5A4EAE] text-[60px] leading-[55px] 14i:text-[90px] 14i:leading-[85px] text-center md:text-start font-extrabold">
                         Expert <br class="hidden md:block">
-                        Image <br>
-                        <span class="text-[#F76D4A]">Smmetric</span>
-                    </p>
+                        Image
+                        <p class="typewriter">
+                            <span class="text-[#F76D4A]" id="typewriter-text"></span>
+                        </p>
+                    </div>
                     <p class="text-sm 14i:text-[18px] text-[#262149] text-center md:text-start pt-4 md:pt-[27px]">
                         Welcome to Dot Clipping, your go-to photo-editing agency for all your image editing needs. At
                         Dot
@@ -218,130 +248,142 @@
             <!-- body part -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[30px] w-full sm:w-fit sm:mx-auto">
                 <!-- service card 1 -->
-                <div class="w-full sm:w-[250px] xl:w-[300px] 14i:w-[350px] 15i:w-[437px]">
-                    <div
-                        class="bg-[#FEFEFE] rounded-t-[35px] py-[20px] 14i:pt-[35px] 14i:pb-[30px] px-4 xl:px-6 15i:px-[30px]">
-                        <p
-                            class="text-[#262149] font-bold text-[20px] leading-[24px] 14i:text-[32px] 14i:leading-[34px]">
-                            NECK JOINT
-                        </p>
-                        <p class="text-[#262149] pt-5 pb-7 text-xs 14i:text-[20px] 14i:leading-[28px]">
-                            Welcome to Dot
-                            Clipping, your go-to <br class="hidden 15i:block">photo-editing agency
-                            for all
-                            your
-                        </p>
-                        <p class="text-[#F76D4A] font-bold text-sm 14i:text-[22px]">Per Image $0.29</p>
+                <a href="./src/pages/service/serviceDetails.html">
+                    <div class="w-full sm:w-[250px] xl:w-[300px] 14i:w-[350px] 15i:w-[437px]">
+                        <div
+                            class="bg-[#FEFEFE] rounded-t-[35px] py-[20px] 14i:pt-[35px] 14i:pb-[30px] px-4 xl:px-6 15i:px-[30px]">
+                            <p
+                                class="text-[#262149] font-bold text-[20px] leading-[24px] 14i:text-[32px] 14i:leading-[34px]">
+                                NECK JOINT
+                            </p>
+                            <p class="text-[#262149] pt-5 pb-7 text-xs 14i:text-[20px] 14i:leading-[28px]">
+                                Welcome to Dot
+                                Clipping, your go-to <br class="hidden 15i:block">photo-editing agency
+                                for all
+                                your
+                            </p>
+                            <p class="text-[#F76D4A] font-bold text-sm 14i:text-[22px]">Per Image $0.29</p>
+                        </div>
+                        <div
+                            class="bg-[#EFEDF7] h-[300px] sm:h-[250px] xl:h-[300px] 14i:h-[350px] 15i:h-[437px] w-full rounded-b-[30px]">
+                        </div>
                     </div>
-                    <div
-                        class="bg-[#EFEDF7] h-[300px] sm:h-[250px] xl:h-[300px] 14i:h-[350px] 15i:h-[437px] w-full rounded-b-[30px]">
-                    </div>
-                </div>
+                </a>
 
                 <!-- service card 2 -->
-                <div class="w-full sm:w-[250px] xl:w-[300px] 14i:w-[350px] 15i:w-[437px]">
-                    <div
-                        class="bg-[#FEFEFE] rounded-t-[35px] py-[20px] 14i:pt-[35px] 14i:pb-[30px] px-4 xl:px-6 15i:px-[30px]">
-                        <p
-                            class="text-[#262149] font-bold text-[20px] leading-[24px] 14i:text-[32px] 14i:leading-[34px]">
-                            NECK JOINT
-                        </p>
-                        <p class="text-[#262149] pt-5 pb-7 text-xs 14i:text-[20px] 14i:leading-[28px]">
-                            Welcome to Dot
-                            Clipping, your go-to <br class="hidden 15i:block">photo-editing agency
-                            for all
-                            your
-                        </p>
-                        <p class="text-[#F76D4A] font-bold text-sm 14i:text-[22px]">Per Image $0.29</p>
+                <a href="./src/pages/service/serviceDetails.html">
+                    <div class="w-full sm:w-[250px] xl:w-[300px] 14i:w-[350px] 15i:w-[437px]">
+                        <div
+                            class="bg-[#FEFEFE] rounded-t-[35px] py-[20px] 14i:pt-[35px] 14i:pb-[30px] px-4 xl:px-6 15i:px-[30px]">
+                            <p
+                                class="text-[#262149] font-bold text-[20px] leading-[24px] 14i:text-[32px] 14i:leading-[34px]">
+                                NECK JOINT
+                            </p>
+                            <p class="text-[#262149] pt-5 pb-7 text-xs 14i:text-[20px] 14i:leading-[28px]">
+                                Welcome to Dot
+                                Clipping, your go-to <br class="hidden 15i:block">photo-editing agency
+                                for all
+                                your
+                            </p>
+                            <p class="text-[#F76D4A] font-bold text-sm 14i:text-[22px]">Per Image $0.29</p>
+                        </div>
+                        <div
+                            class="bg-[#EFEDF7] h-[300px] sm:h-[250px] xl:h-[300px] 14i:h-[350px] 15i:h-[437px] w-full rounded-b-[30px]">
+                        </div>
                     </div>
-                    <div
-                        class="bg-[#EFEDF7] h-[300px] sm:h-[250px] xl:h-[300px] 14i:h-[350px] 15i:h-[437px] w-full rounded-b-[30px]">
-                    </div>
-                </div>
+                </a>
 
                 <!-- service card 3 -->
-                <div class="w-full sm:w-[250px] xl:w-[300px] 14i:w-[350px] 15i:w-[437px]">
-                    <div
-                        class="bg-[#FEFEFE] rounded-t-[35px] py-[20px] 14i:pt-[35px] 14i:pb-[30px] px-4 xl:px-6 15i:px-[30px]">
-                        <p
-                            class="text-[#262149] font-bold text-[20px] leading-[24px] 14i:text-[32px] 14i:leading-[34px]">
-                            NECK JOINT
-                        </p>
-                        <p class="text-[#262149] pt-5 pb-7 text-xs 14i:text-[20px] 14i:leading-[28px]">
-                            Welcome to Dot
-                            Clipping, your go-to <br class="hidden 15i:block">photo-editing agency
-                            for all
-                            your
-                        </p>
-                        <p class="text-[#F76D4A] font-bold text-sm 14i:text-[22px]">Per Image $0.29</p>
+                <a href="./src/pages/service/serviceDetails.html">
+                    <div class="w-full sm:w-[250px] xl:w-[300px] 14i:w-[350px] 15i:w-[437px]">
+                        <div
+                            class="bg-[#FEFEFE] rounded-t-[35px] py-[20px] 14i:pt-[35px] 14i:pb-[30px] px-4 xl:px-6 15i:px-[30px]">
+                            <p
+                                class="text-[#262149] font-bold text-[20px] leading-[24px] 14i:text-[32px] 14i:leading-[34px]">
+                                NECK JOINT
+                            </p>
+                            <p class="text-[#262149] pt-5 pb-7 text-xs 14i:text-[20px] 14i:leading-[28px]">
+                                Welcome to Dot
+                                Clipping, your go-to <br class="hidden 15i:block">photo-editing agency
+                                for all
+                                your
+                            </p>
+                            <p class="text-[#F76D4A] font-bold text-sm 14i:text-[22px]">Per Image $0.29</p>
+                        </div>
+                        <div
+                            class="bg-[#EFEDF7] h-[300px] sm:h-[250px] xl:h-[300px] 14i:h-[350px] 15i:h-[437px] w-full rounded-b-[30px]">
+                        </div>
                     </div>
-                    <div
-                        class="bg-[#EFEDF7] h-[300px] sm:h-[250px] xl:h-[300px] 14i:h-[350px] 15i:h-[437px] w-full rounded-b-[30px]">
-                    </div>
-                </div>
+                </a>
 
                 <!-- service card 4 -->
-                <div class="w-full sm:w-[250px] xl:w-[300px] 14i:w-[350px] 15i:w-[437px]">
-                    <div
-                        class="bg-[#FEFEFE] rounded-t-[35px] py-[20px] 14i:pt-[35px] 14i:pb-[30px] px-4 xl:px-6 15i:px-[30px]">
-                        <p
-                            class="text-[#262149] font-bold text-[20px] leading-[24px] 14i:text-[32px] 14i:leading-[34px]">
-                            NECK JOINT
-                        </p>
-                        <p class="text-[#262149] pt-5 pb-7 text-xs 14i:text-[20px] 14i:leading-[28px]">
-                            Welcome to Dot
-                            Clipping, your go-to <br class="hidden 15i:block">photo-editing agency
-                            for all
-                            your
-                        </p>
-                        <p class="text-[#F76D4A] font-bold text-sm 14i:text-[22px]">Per Image $0.29</p>
+                <a href="./src/pages/service/serviceDetails.html">
+                    <div class="w-full sm:w-[250px] xl:w-[300px] 14i:w-[350px] 15i:w-[437px]">
+                        <div
+                            class="bg-[#FEFEFE] rounded-t-[35px] py-[20px] 14i:pt-[35px] 14i:pb-[30px] px-4 xl:px-6 15i:px-[30px]">
+                            <p
+                                class="text-[#262149] font-bold text-[20px] leading-[24px] 14i:text-[32px] 14i:leading-[34px]">
+                                NECK JOINT
+                            </p>
+                            <p class="text-[#262149] pt-5 pb-7 text-xs 14i:text-[20px] 14i:leading-[28px]">
+                                Welcome to Dot
+                                Clipping, your go-to <br class="hidden 15i:block">photo-editing agency
+                                for all
+                                your
+                            </p>
+                            <p class="text-[#F76D4A] font-bold text-sm 14i:text-[22px]">Per Image $0.29</p>
+                        </div>
+                        <div
+                            class="bg-[#EFEDF7] h-[300px] sm:h-[250px] xl:h-[300px] 14i:h-[350px] 15i:h-[437px] w-full rounded-b-[30px]">
+                        </div>
                     </div>
-                    <div
-                        class="bg-[#EFEDF7] h-[300px] sm:h-[250px] xl:h-[300px] 14i:h-[350px] 15i:h-[437px] w-full rounded-b-[30px]">
-                    </div>
-                </div>
+                </a>
 
                 <!-- service card 5 -->
-                <div class="w-full sm:w-[250px] xl:w-[300px] 14i:w-[350px] 15i:w-[437px]">
-                    <div
-                        class="bg-[#FEFEFE] rounded-t-[35px] py-[20px] 14i:pt-[35px] 14i:pb-[30px] px-4 xl:px-6 15i:px-[30px]">
-                        <p
-                            class="text-[#262149] font-bold text-[20px] leading-[24px] 14i:text-[32px] 14i:leading-[34px]">
-                            NECK JOINT
-                        </p>
-                        <p class="text-[#262149] pt-5 pb-7 text-xs 14i:text-[20px] 14i:leading-[28px]">
-                            Welcome to Dot
-                            Clipping, your go-to <br class="hidden 15i:block">photo-editing agency
-                            for all
-                            your
-                        </p>
-                        <p class="text-[#F76D4A] font-bold text-sm 14i:text-[22px]">Per Image $0.29</p>
+                <a href="./src/pages/service/serviceDetails.html">
+                    <div class="w-full sm:w-[250px] xl:w-[300px] 14i:w-[350px] 15i:w-[437px]">
+                        <div
+                            class="bg-[#FEFEFE] rounded-t-[35px] py-[20px] 14i:pt-[35px] 14i:pb-[30px] px-4 xl:px-6 15i:px-[30px]">
+                            <p
+                                class="text-[#262149] font-bold text-[20px] leading-[24px] 14i:text-[32px] 14i:leading-[34px]">
+                                NECK JOINT
+                            </p>
+                            <p class="text-[#262149] pt-5 pb-7 text-xs 14i:text-[20px] 14i:leading-[28px]">
+                                Welcome to Dot
+                                Clipping, your go-to <br class="hidden 15i:block">photo-editing agency
+                                for all
+                                your
+                            </p>
+                            <p class="text-[#F76D4A] font-bold text-sm 14i:text-[22px]">Per Image $0.29</p>
+                        </div>
+                        <div
+                            class="bg-[#EFEDF7] h-[300px] sm:h-[250px] xl:h-[300px] 14i:h-[350px] 15i:h-[437px] w-full rounded-b-[30px]">
+                        </div>
                     </div>
-                    <div
-                        class="bg-[#EFEDF7] h-[300px] sm:h-[250px] xl:h-[300px] 14i:h-[350px] 15i:h-[437px] w-full rounded-b-[30px]">
-                    </div>
-                </div>
+                </a>
 
                 <!-- service card 6 -->
-                <div class="w-full sm:w-[250px] xl:w-[300px] 14i:w-[350px] 15i:w-[437px]">
-                    <div
-                        class="bg-[#FEFEFE] rounded-t-[35px] py-[20px] 14i:pt-[35px] 14i:pb-[30px] px-4 xl:px-6 15i:px-[30px]">
-                        <p
-                            class="text-[#262149] font-bold text-[20px] leading-[24px] 14i:text-[32px] 14i:leading-[34px]">
-                            NECK JOINT
-                        </p>
-                        <p class="text-[#262149] pt-5 pb-7 text-xs 14i:text-[20px] 14i:leading-[28px]">
-                            Welcome to Dot
-                            Clipping, your go-to <br class="hidden 15i:block">photo-editing agency
-                            for all
-                            your
-                        </p>
-                        <p class="text-[#F76D4A] font-bold text-sm 14i:text-[22px]">Per Image $0.29</p>
+                <a href="./src/pages/service/serviceDetails.html">
+                    <div class="w-full sm:w-[250px] xl:w-[300px] 14i:w-[350px] 15i:w-[437px]">
+                        <div
+                            class="bg-[#FEFEFE] rounded-t-[35px] py-[20px] 14i:pt-[35px] 14i:pb-[30px] px-4 xl:px-6 15i:px-[30px]">
+                            <p
+                                class="text-[#262149] font-bold text-[20px] leading-[24px] 14i:text-[32px] 14i:leading-[34px]">
+                                NECK JOINT
+                            </p>
+                            <p class="text-[#262149] pt-5 pb-7 text-xs 14i:text-[20px] 14i:leading-[28px]">
+                                Welcome to Dot
+                                Clipping, your go-to <br class="hidden 15i:block">photo-editing agency
+                                for all
+                                your
+                            </p>
+                            <p class="text-[#F76D4A] font-bold text-sm 14i:text-[22px]">Per Image $0.29</p>
+                        </div>
+                        <div
+                            class="bg-[#EFEDF7] h-[300px] sm:h-[250px] xl:h-[300px] 14i:h-[350px] 15i:h-[437px] w-full rounded-b-[30px]">
+                        </div>
                     </div>
-                    <div
-                        class="bg-[#EFEDF7] h-[300px] sm:h-[250px] xl:h-[300px] 14i:h-[350px] 15i:h-[437px] w-full rounded-b-[30px]">
-                    </div>
-                </div>
+                </a>
             </div>
         </section>
 
@@ -1041,6 +1083,36 @@
                 document.removeEventListener('mouseup', stopResize);
             }
         });
+
+        //typewriter---------------------
+        const texts = ["Smmetric"];
+        const speed = 300; // typing speed in milliseconds
+        let textIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+
+        function type() {
+            const typewriterText = document.getElementById("typewriter-text");
+            const currentText = texts[textIndex];
+
+            if (!isDeleting && charIndex < currentText.length) {
+                typewriterText.innerHTML += currentText.charAt(charIndex);
+                charIndex++;
+                setTimeout(type, speed);
+            } else if (isDeleting && charIndex > 0) {
+                typewriterText.innerHTML = currentText.substring(0, charIndex - 1);
+                charIndex--;
+                setTimeout(type, speed);
+            } else {
+                isDeleting = !isDeleting;
+                if (!isDeleting) {
+                    textIndex = (textIndex + 1) % texts.length;
+                }
+                setTimeout(type, speed);
+            }
+        }
+
+        window.onload = type;
 
     </script>
 </body>
