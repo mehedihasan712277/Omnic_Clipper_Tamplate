@@ -19,7 +19,7 @@
             .swiper {
                 width: 100%;
                 height: 100%;
-                padding-bottom: 74px;
+                padding-bottom: 40px;
             }
 
             .swiper-slide {
@@ -959,7 +959,7 @@
             </div>
 
             <!-------------slider for small device---------->
-            <div class="lg:hidden px-4">
+            <div class="lg:hidden px-4 bg-green-400">
                 <div class="swiper mySwiper1">
                     <div class="swiper-wrapper">
                         <!-- slide 1 -->
@@ -1209,7 +1209,6 @@
                 </div>
             </div>
         </section>
-        <p id="a"></p>
     </main>
 
 
@@ -1353,7 +1352,6 @@
 
             document.getElementById("prev").style.left = `${z - 72}px`
             document.getElementById("next").style.right = `${z - 72}px`
-            document.getElementById("a").innerHTML = z
         }
         setDistance();
 
@@ -1362,28 +1360,37 @@
         //initialize swiper for small device
 
         const setSlidesPerView = () => {
-            let slidePerView = 1;
             const x = Number(window.innerWidth)
             if (x >= 768) {
-                slidePerView = 3
+                var swiper1 = new Swiper(".mySwiper1", {
+                    slidesPerView: 3,
+                    spaceBetween: 10,
+                    centeredSlides: false,
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                });
             }
             else if (x >= 640) {
-                slidePerView = 2
+                var swiper1 = new Swiper(".mySwiper1", {
+                    slidesPerView: 2,
+                    spaceBetween: 10,
+                    centeredSlides: false,
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                });
             }
             else {
-                slidePerView = 1
+                var swiper1 = new Swiper(".mySwiper1", {
+                    pagination: {
+                        el: ".swiper-pagination",
+                        type: "fraction",
+                    },
+                });
             }
-
-
-            var swiper1 = new Swiper(".mySwiper1", {
-                slidesPerView: slidePerView,
-                spaceBetween: 10,
-                centeredSlides: false,
-                pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true,
-                },
-            });
         }
         setSlidesPerView()
         window.addEventListener("resize", setSlidesPerView)
