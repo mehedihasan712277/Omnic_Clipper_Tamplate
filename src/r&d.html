@@ -204,16 +204,35 @@
 
         window.addEventListener("resize", setDistance)
 
-        //initialize swiper for large device
-        var swiper1 = new Swiper(".mySwiper1", {
-            slidesPerView: 4,
-            spaceBetween: 30,
-            centeredSlides: false,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-        });
+        //initialize swiper for small device
+
+        const setSlidesPerView = () => {
+            let slidePerView = 1;
+            const x = Number(window.innerWidth)
+            if (x >= 768) {
+                slidePerView = 3
+            }
+            else if (x >= 640) {
+                slidePerView = 2
+            }
+            else {
+                slidePerView = 1
+            }
+
+
+            var swiper1 = new Swiper(".mySwiper1", {
+                slidesPerView: slidePerView,
+                spaceBetween: 30,
+                centeredSlides: false,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+            });
+        }
+        setSlidesPerView()
+        window.addEventListener("resize", setSlidesPerView)
+
     </script>
 </body>
 
