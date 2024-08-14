@@ -11,6 +11,85 @@
         href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Demo styles -->
+    <style>
+        .swiper {
+            width: 100%;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: red;
+            padding-bottom: 74px;
+            position: relative;
+        }
+
+        .swiper-wrapper {
+            background-color: yellow;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background-color: blue;
+        }
+
+        .swiper-pagination {
+            display: inline-block;
+            width: fit-content !important;
+            position: absolute;
+            bottom: 10px !important;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+        }
+
+        .swiper-pagination-bullet {
+            width: 54px;
+            height: 54px;
+            text-align: center;
+            line-height: 54px;
+            font-size: 24px;
+            color: #262149;
+            opacity: 1;
+            background: #EFEDF7;
+            margin: 0 9px !important;
+        }
+
+        .swiper-pagination-bullet-active {
+            color: #EFEDF7;
+            background: #262149;
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: #262149;
+            font-weight: bolder;
+            background: #EFEDF7;
+            border-radius: 50%;
+            width: 54px;
+            height: 54px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+
+            z-index: 100;
+            position: absolute;
+            bottom: 10px;
+            top: auto;
+        }
+
+        .swiper-button-prev::after,
+        .swiper-button-next::after {
+            font-size: 24px;
+        }
+    </style>
 </head>
 
 <body>
@@ -128,32 +207,711 @@
             </div>
         </section>
 
+
         <!-- =============================blogs================================ -->
-        <section class="px-4 md:px-8 lg:px-12 xl:px-16 15i:px-20 py-8 md:py-12 lg:py-16 xl:py-20 15i:py-[120px]">
-            <!-- service card 1 -->
-            <a href="./blogDetails.html">
-                <div
-                    class="w-full sm:w-[250px] xl:w-[300px] 14i:w-[350px] 15i:w-[437px] border-[1px] border-[#5A4EAE] rounded-[30px]">
-                    <!-- image container -->
-                    <div
-                        class="bg-[#EFEDF7] h-[300px] sm:h-[250px] xl:h-[300px] 14i:h-[350px] 15i:h-[437px] w-full rounded-t-[30px]">
+        <section class="py-8 md:py-12 lg:py-16 xl:py-20 15i:py-[120px]">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <!-- slide 1 -->
+                    <div class="swiper-slide">
+                        <!-- main slide content -->
+                        <div
+                            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[30px] w-full sm:w-fit sm:mx-auto bg-green-400">
+                            <!-- service card 1 -->
+                            <a href="./blogDetails.html">
+                                <div
+                                    class="w-full sm:w-[250px] xl:w-[300px] 14i:w-[350px] 15i:w-[437px] border-[1px] border-[#5A4EAE] rounded-[30px]">
+                                    <!-- image container -->
+                                    <div
+                                        class="bg-[#EFEDF7] h-[300px] sm:h-[250px] xl:h-[300px] 14i:h-[350px] 15i:h-[437px] w-full rounded-t-[30px]">
+                                    </div>
+                                    <!-- description -->
+                                    <div
+                                        class="bg-[#FEFEFE] rounded-b-[30px] py-[20px] 15i:pt-[27px] 15i:pb-[38px] px-4 xl:px-6 15i:px-[34px]">
+                                        <p class="text-[#262149] font-[500] text-[20px] leading-[24px] 14i:text-[28px]">
+                                            Welcome to Dot Clipping, your go-to...
+                                        </p>
+                                        <p class="text-[#262149] pt-5 pb-[30px] text-xs lg:text-[16px] 14i:text-xl">
+                                            photo-editing agency for all your...
+                                        </p>
+                                        <p
+                                            class="text-[#F76D4A] font-[500] text-sm lg:text-[18px] 14i:text-[20px] flex items-center gap-2">
+                                            <span>Read More</span> <img src="../../../assets/Arrow.png" alt="arrow">
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- service card 2 -->
+                            <a href="./blogDetails.html">
+                                <div
+                                    class="w-full sm:w-[250px] xl:w-[300px] 14i:w-[350px] 15i:w-[437px] border-[1px] border-[#5A4EAE] rounded-[30px]">
+                                    <!-- image container -->
+                                    <div
+                                        class="bg-[#EFEDF7] h-[300px] sm:h-[250px] xl:h-[300px] 14i:h-[350px] 15i:h-[437px] w-full rounded-t-[30px]">
+                                    </div>
+                                    <!-- description -->
+                                    <div
+                                        class="bg-[#FEFEFE] rounded-b-[30px] py-[20px] 15i:pt-[27px] 15i:pb-[38px] px-4 xl:px-6 15i:px-[34px]">
+                                        <p class="text-[#262149] font-[500] text-[20px] leading-[24px] 14i:text-[28px]">
+                                            Welcome to Dot Clipping, your go-to...
+                                        </p>
+                                        <p class="text-[#262149] pt-5 pb-[30px] text-xs lg:text-[16px] 14i:text-xl">
+                                            photo-editing agency for all your...
+                                        </p>
+                                        <p
+                                            class="text-[#F76D4A] font-[500] text-sm lg:text-[18px] 14i:text-[20px] flex items-center gap-2">
+                                            <span>Read More</span> <img src="../../../assets/Arrow.png" alt="arrow">
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- service card 3 -->
+                            <a href="./blogDetails.html">
+                                <div
+                                    class="w-full sm:w-[250px] xl:w-[300px] 14i:w-[350px] 15i:w-[437px] border-[1px] border-[#5A4EAE] rounded-[30px]">
+                                    <!-- image container -->
+                                    <div
+                                        class="bg-[#EFEDF7] h-[300px] sm:h-[250px] xl:h-[300px] 14i:h-[350px] 15i:h-[437px] w-full rounded-t-[30px]">
+                                    </div>
+                                    <!-- description -->
+                                    <div
+                                        class="bg-[#FEFEFE] rounded-b-[30px] py-[20px] 15i:pt-[27px] 15i:pb-[38px] px-4 xl:px-6 15i:px-[34px]">
+                                        <p class="text-[#262149] font-[500] text-[20px] leading-[24px] 14i:text-[28px]">
+                                            Welcome to Dot Clipping, your go-to...
+                                        </p>
+                                        <p class="text-[#262149] pt-5 pb-[30px] text-xs lg:text-[16px] 14i:text-xl">
+                                            photo-editing agency for all your...
+                                        </p>
+                                        <p
+                                            class="text-[#F76D4A] font-[500] text-sm lg:text-[18px] 14i:text-[20px] flex items-center gap-2">
+                                            <span>Read More</span> <img src="../../../assets/Arrow.png" alt="arrow">
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- service card 4 -->
+                            <a href="./blogDetails.html">
+                                <div
+                                    class="w-full sm:w-[250px] xl:w-[300px] 14i:w-[350px] 15i:w-[437px] border-[1px] border-[#5A4EAE] rounded-[30px]">
+                                    <!-- image container -->
+                                    <div
+                                        class="bg-[#EFEDF7] h-[300px] sm:h-[250px] xl:h-[300px] 14i:h-[350px] 15i:h-[437px] w-full rounded-t-[30px]">
+                                    </div>
+                                    <!-- description -->
+                                    <div
+                                        class="bg-[#FEFEFE] rounded-b-[30px] py-[20px] 15i:pt-[27px] 15i:pb-[38px] px-4 xl:px-6 15i:px-[34px]">
+                                        <p class="text-[#262149] font-[500] text-[20px] leading-[24px] 14i:text-[28px]">
+                                            Welcome to Dot Clipping, your go-to...
+                                        </p>
+                                        <p class="text-[#262149] pt-5 pb-[30px] text-xs lg:text-[16px] 14i:text-xl">
+                                            photo-editing agency for all your...
+                                        </p>
+                                        <p
+                                            class="text-[#F76D4A] font-[500] text-sm lg:text-[18px] 14i:text-[20px] flex items-center gap-2">
+                                            <span>Read More</span> <img src="../../../assets/Arrow.png" alt="arrow">
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- service card 5 -->
+                            <a href="./blogDetails.html">
+                                <div
+                                    class="w-full sm:w-[250px] xl:w-[300px] 14i:w-[350px] 15i:w-[437px] border-[1px] border-[#5A4EAE] rounded-[30px]">
+                                    <!-- image container -->
+                                    <div
+                                        class="bg-[#EFEDF7] h-[300px] sm:h-[250px] xl:h-[300px] 14i:h-[350px] 15i:h-[437px] w-full rounded-t-[30px]">
+                                    </div>
+                                    <!-- description -->
+                                    <div
+                                        class="bg-[#FEFEFE] rounded-b-[30px] py-[20px] 15i:pt-[27px] 15i:pb-[38px] px-4 xl:px-6 15i:px-[34px]">
+                                        <p class="text-[#262149] font-[500] text-[20px] leading-[24px] 14i:text-[28px]">
+                                            Welcome to Dot Clipping, your go-to...
+                                        </p>
+                                        <p class="text-[#262149] pt-5 pb-[30px] text-xs lg:text-[16px] 14i:text-xl">
+                                            photo-editing agency for all your...
+                                        </p>
+                                        <p
+                                            class="text-[#F76D4A] font-[500] text-sm lg:text-[18px] 14i:text-[20px] flex items-center gap-2">
+                                            <span>Read More</span> <img src="../../../assets/Arrow.png" alt="arrow">
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- service card 6 -->
+                            <a href="./blogDetails.html">
+                                <div
+                                    class="w-full sm:w-[250px] xl:w-[300px] 14i:w-[350px] 15i:w-[437px] border-[1px] border-[#5A4EAE] rounded-[30px]">
+                                    <!-- image container -->
+                                    <div
+                                        class="bg-[#EFEDF7] h-[300px] sm:h-[250px] xl:h-[300px] 14i:h-[350px] 15i:h-[437px] w-full rounded-t-[30px]">
+                                    </div>
+                                    <!-- description -->
+                                    <div
+                                        class="bg-[#FEFEFE] rounded-b-[30px] py-[20px] 15i:pt-[27px] 15i:pb-[38px] px-4 xl:px-6 15i:px-[34px]">
+                                        <p class="text-[#262149] font-[500] text-[20px] leading-[24px] 14i:text-[28px]">
+                                            Welcome to Dot Clipping, your go-to...
+                                        </p>
+                                        <p class="text-[#262149] pt-5 pb-[30px] text-xs lg:text-[16px] 14i:text-xl">
+                                            photo-editing agency for all your...
+                                        </p>
+                                        <p
+                                            class="text-[#F76D4A] font-[500] text-sm lg:text-[18px] 14i:text-[20px] flex items-center gap-2">
+                                            <span>Read More</span> <img src="../../../assets/Arrow.png" alt="arrow">
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- service card 7 -->
+                            <a href="./blogDetails.html">
+                                <div
+                                    class="w-full sm:w-[250px] xl:w-[300px] 14i:w-[350px] 15i:w-[437px] border-[1px] border-[#5A4EAE] rounded-[30px]">
+                                    <!-- image container -->
+                                    <div
+                                        class="bg-[#EFEDF7] h-[300px] sm:h-[250px] xl:h-[300px] 14i:h-[350px] 15i:h-[437px] w-full rounded-t-[30px]">
+                                    </div>
+                                    <!-- description -->
+                                    <div
+                                        class="bg-[#FEFEFE] rounded-b-[30px] py-[20px] 15i:pt-[27px] 15i:pb-[38px] px-4 xl:px-6 15i:px-[34px]">
+                                        <p class="text-[#262149] font-[500] text-[20px] leading-[24px] 14i:text-[28px]">
+                                            Welcome to Dot Clipping, your go-to...
+                                        </p>
+                                        <p class="text-[#262149] pt-5 pb-[30px] text-xs lg:text-[16px] 14i:text-xl">
+                                            photo-editing agency for all your...
+                                        </p>
+                                        <p
+                                            class="text-[#F76D4A] font-[500] text-sm lg:text-[18px] 14i:text-[20px] flex items-center gap-2">
+                                            <span>Read More</span> <img src="../../../assets/Arrow.png" alt="arrow">
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- service card 8 -->
+                            <a href="./blogDetails.html">
+                                <div
+                                    class="w-full sm:w-[250px] xl:w-[300px] 14i:w-[350px] 15i:w-[437px] border-[1px] border-[#5A4EAE] rounded-[30px]">
+                                    <!-- image container -->
+                                    <div
+                                        class="bg-[#EFEDF7] h-[300px] sm:h-[250px] xl:h-[300px] 14i:h-[350px] 15i:h-[437px] w-full rounded-t-[30px]">
+                                    </div>
+                                    <!-- description -->
+                                    <div
+                                        class="bg-[#FEFEFE] rounded-b-[30px] py-[20px] 15i:pt-[27px] 15i:pb-[38px] px-4 xl:px-6 15i:px-[34px]">
+                                        <p class="text-[#262149] font-[500] text-[20px] leading-[24px] 14i:text-[28px]">
+                                            Welcome to Dot Clipping, your go-to...
+                                        </p>
+                                        <p class="text-[#262149] pt-5 pb-[30px] text-xs lg:text-[16px] 14i:text-xl">
+                                            photo-editing agency for all your...
+                                        </p>
+                                        <p
+                                            class="text-[#F76D4A] font-[500] text-sm lg:text-[18px] 14i:text-[20px] flex items-center gap-2">
+                                            <span>Read More</span> <img src="../../../assets/Arrow.png" alt="arrow">
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- service card 9 -->
+                            <a href="./blogDetails.html">
+                                <div
+                                    class="w-full sm:w-[250px] xl:w-[300px] 14i:w-[350px] 15i:w-[437px] border-[1px] border-[#5A4EAE] rounded-[30px]">
+                                    <!-- image container -->
+                                    <div
+                                        class="bg-[#EFEDF7] h-[300px] sm:h-[250px] xl:h-[300px] 14i:h-[350px] 15i:h-[437px] w-full rounded-t-[30px]">
+                                    </div>
+                                    <!-- description -->
+                                    <div
+                                        class="bg-[#FEFEFE] rounded-b-[30px] py-[20px] 15i:pt-[27px] 15i:pb-[38px] px-4 xl:px-6 15i:px-[34px]">
+                                        <p class="text-[#262149] font-[500] text-[20px] leading-[24px] 14i:text-[28px]">
+                                            Welcome to Dot Clipping, your go-to...
+                                        </p>
+                                        <p class="text-[#262149] pt-5 pb-[30px] text-xs lg:text-[16px] 14i:text-xl">
+                                            photo-editing agency for all your...
+                                        </p>
+                                        <p
+                                            class="text-[#F76D4A] font-[500] text-sm lg:text-[18px] 14i:text-[20px] flex items-center gap-2">
+                                            <span>Read More</span> <img src="../../../assets/Arrow.png" alt="arrow">
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <!-- description -->
-                    <div
-                        class="bg-[#FEFEFE] rounded-b-[30px] py-[20px] 15i:pt-[27px] 15i:pb-[38px] px-4 xl:px-6 15i:px-[34px]">
-                        <p class="text-[#262149] font-[500] text-[20px] leading-[24px] 14i:text-[28px]">
-                            Welcome to Dot Clipping, your go-to...
-                        </p>
-                        <p class="text-[#262149] pt-5 pb-[30px] text-xs lg:text-[16px] 14i:text-xl">
-                            photo-editing agency for all your...
-                        </p>
-                        <p
-                            class="text-[#F76D4A] font-[500] text-sm lg:text-[18px] 14i:text-[20px] flex items-center gap-2">
-                            <span>Read More</span> <img src="../../../assets/Arrow.png" alt="arrow">
-                        </p>
+                    <!-- slide 2 -->
+                    <div class="swiper-slide">
+                        <!-- main slide content -->
+                        <div
+                            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[30px] w-full sm:w-fit sm:mx-auto bg-green-400">
+                            <!-- service card 1 -->
+                            <a href="./blogDetails.html">
+                                <div
+                                    class="w-full sm:w-[250px] xl:w-[300px] 14i:w-[350px] 15i:w-[437px] border-[1px] border-[#5A4EAE] rounded-[30px]">
+                                    <!-- image container -->
+                                    <div
+                                        class="bg-[#EFEDF7] h-[300px] sm:h-[250px] xl:h-[300px] 14i:h-[350px] 15i:h-[437px] w-full rounded-t-[30px]">
+                                    </div>
+                                    <!-- description -->
+                                    <div
+                                        class="bg-[#FEFEFE] rounded-b-[30px] py-[20px] 15i:pt-[27px] 15i:pb-[38px] px-4 xl:px-6 15i:px-[34px]">
+                                        <p class="text-[#262149] font-[500] text-[20px] leading-[24px] 14i:text-[28px]">
+                                            Welcome to Dot Clipping, your go-to...
+                                        </p>
+                                        <p class="text-[#262149] pt-5 pb-[30px] text-xs lg:text-[16px] 14i:text-xl">
+                                            photo-editing agency for all your...
+                                        </p>
+                                        <p
+                                            class="text-[#F76D4A] font-[500] text-sm lg:text-[18px] 14i:text-[20px] flex items-center gap-2">
+                                            <span>Read More</span> <img src="../../../assets/Arrow.png" alt="arrow">
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- service card 2 -->
+                            <a href="./blogDetails.html">
+                                <div
+                                    class="w-full sm:w-[250px] xl:w-[300px] 14i:w-[350px] 15i:w-[437px] border-[1px] border-[#5A4EAE] rounded-[30px]">
+                                    <!-- image container -->
+                                    <div
+                                        class="bg-[#EFEDF7] h-[300px] sm:h-[250px] xl:h-[300px] 14i:h-[350px] 15i:h-[437px] w-full rounded-t-[30px]">
+                                    </div>
+                                    <!-- description -->
+                                    <div
+                                        class="bg-[#FEFEFE] rounded-b-[30px] py-[20px] 15i:pt-[27px] 15i:pb-[38px] px-4 xl:px-6 15i:px-[34px]">
+                                        <p class="text-[#262149] font-[500] text-[20px] leading-[24px] 14i:text-[28px]">
+                                            Welcome to Dot Clipping, your go-to...
+                                        </p>
+                                        <p class="text-[#262149] pt-5 pb-[30px] text-xs lg:text-[16px] 14i:text-xl">
+                                            photo-editing agency for all your...
+                                        </p>
+                                        <p
+                                            class="text-[#F76D4A] font-[500] text-sm lg:text-[18px] 14i:text-[20px] flex items-center gap-2">
+                                            <span>Read More</span> <img src="../../../assets/Arrow.png" alt="arrow">
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- service card 3 -->
+                            <a href="./blogDetails.html">
+                                <div
+                                    class="w-full sm:w-[250px] xl:w-[300px] 14i:w-[350px] 15i:w-[437px] border-[1px] border-[#5A4EAE] rounded-[30px]">
+                                    <!-- image container -->
+                                    <div
+                                        class="bg-[#EFEDF7] h-[300px] sm:h-[250px] xl:h-[300px] 14i:h-[350px] 15i:h-[437px] w-full rounded-t-[30px]">
+                                    </div>
+                                    <!-- description -->
+                                    <div
+                                        class="bg-[#FEFEFE] rounded-b-[30px] py-[20px] 15i:pt-[27px] 15i:pb-[38px] px-4 xl:px-6 15i:px-[34px]">
+                                        <p class="text-[#262149] font-[500] text-[20px] leading-[24px] 14i:text-[28px]">
+                                            Welcome to Dot Clipping, your go-to...
+                                        </p>
+                                        <p class="text-[#262149] pt-5 pb-[30px] text-xs lg:text-[16px] 14i:text-xl">
+                                            photo-editing agency for all your...
+                                        </p>
+                                        <p
+                                            class="text-[#F76D4A] font-[500] text-sm lg:text-[18px] 14i:text-[20px] flex items-center gap-2">
+                                            <span>Read More</span> <img src="../../../assets/Arrow.png" alt="arrow">
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- service card 4 -->
+                            <a href="./blogDetails.html">
+                                <div
+                                    class="w-full sm:w-[250px] xl:w-[300px] 14i:w-[350px] 15i:w-[437px] border-[1px] border-[#5A4EAE] rounded-[30px]">
+                                    <!-- image container -->
+                                    <div
+                                        class="bg-[#EFEDF7] h-[300px] sm:h-[250px] xl:h-[300px] 14i:h-[350px] 15i:h-[437px] w-full rounded-t-[30px]">
+                                    </div>
+                                    <!-- description -->
+                                    <div
+                                        class="bg-[#FEFEFE] rounded-b-[30px] py-[20px] 15i:pt-[27px] 15i:pb-[38px] px-4 xl:px-6 15i:px-[34px]">
+                                        <p class="text-[#262149] font-[500] text-[20px] leading-[24px] 14i:text-[28px]">
+                                            Welcome to Dot Clipping, your go-to...
+                                        </p>
+                                        <p class="text-[#262149] pt-5 pb-[30px] text-xs lg:text-[16px] 14i:text-xl">
+                                            photo-editing agency for all your...
+                                        </p>
+                                        <p
+                                            class="text-[#F76D4A] font-[500] text-sm lg:text-[18px] 14i:text-[20px] flex items-center gap-2">
+                                            <span>Read More</span> <img src="../../../assets/Arrow.png" alt="arrow">
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- service card 5 -->
+                            <a href="./blogDetails.html">
+                                <div
+                                    class="w-full sm:w-[250px] xl:w-[300px] 14i:w-[350px] 15i:w-[437px] border-[1px] border-[#5A4EAE] rounded-[30px]">
+                                    <!-- image container -->
+                                    <div
+                                        class="bg-[#EFEDF7] h-[300px] sm:h-[250px] xl:h-[300px] 14i:h-[350px] 15i:h-[437px] w-full rounded-t-[30px]">
+                                    </div>
+                                    <!-- description -->
+                                    <div
+                                        class="bg-[#FEFEFE] rounded-b-[30px] py-[20px] 15i:pt-[27px] 15i:pb-[38px] px-4 xl:px-6 15i:px-[34px]">
+                                        <p class="text-[#262149] font-[500] text-[20px] leading-[24px] 14i:text-[28px]">
+                                            Welcome to Dot Clipping, your go-to...
+                                        </p>
+                                        <p class="text-[#262149] pt-5 pb-[30px] text-xs lg:text-[16px] 14i:text-xl">
+                                            photo-editing agency for all your...
+                                        </p>
+                                        <p
+                                            class="text-[#F76D4A] font-[500] text-sm lg:text-[18px] 14i:text-[20px] flex items-center gap-2">
+                                            <span>Read More</span> <img src="../../../assets/Arrow.png" alt="arrow">
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- service card 6 -->
+                            <a href="./blogDetails.html">
+                                <div
+                                    class="w-full sm:w-[250px] xl:w-[300px] 14i:w-[350px] 15i:w-[437px] border-[1px] border-[#5A4EAE] rounded-[30px]">
+                                    <!-- image container -->
+                                    <div
+                                        class="bg-[#EFEDF7] h-[300px] sm:h-[250px] xl:h-[300px] 14i:h-[350px] 15i:h-[437px] w-full rounded-t-[30px]">
+                                    </div>
+                                    <!-- description -->
+                                    <div
+                                        class="bg-[#FEFEFE] rounded-b-[30px] py-[20px] 15i:pt-[27px] 15i:pb-[38px] px-4 xl:px-6 15i:px-[34px]">
+                                        <p class="text-[#262149] font-[500] text-[20px] leading-[24px] 14i:text-[28px]">
+                                            Welcome to Dot Clipping, your go-to...
+                                        </p>
+                                        <p class="text-[#262149] pt-5 pb-[30px] text-xs lg:text-[16px] 14i:text-xl">
+                                            photo-editing agency for all your...
+                                        </p>
+                                        <p
+                                            class="text-[#F76D4A] font-[500] text-sm lg:text-[18px] 14i:text-[20px] flex items-center gap-2">
+                                            <span>Read More</span> <img src="../../../assets/Arrow.png" alt="arrow">
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- service card 7 -->
+                            <a href="./blogDetails.html">
+                                <div
+                                    class="w-full sm:w-[250px] xl:w-[300px] 14i:w-[350px] 15i:w-[437px] border-[1px] border-[#5A4EAE] rounded-[30px]">
+                                    <!-- image container -->
+                                    <div
+                                        class="bg-[#EFEDF7] h-[300px] sm:h-[250px] xl:h-[300px] 14i:h-[350px] 15i:h-[437px] w-full rounded-t-[30px]">
+                                    </div>
+                                    <!-- description -->
+                                    <div
+                                        class="bg-[#FEFEFE] rounded-b-[30px] py-[20px] 15i:pt-[27px] 15i:pb-[38px] px-4 xl:px-6 15i:px-[34px]">
+                                        <p class="text-[#262149] font-[500] text-[20px] leading-[24px] 14i:text-[28px]">
+                                            Welcome to Dot Clipping, your go-to...
+                                        </p>
+                                        <p class="text-[#262149] pt-5 pb-[30px] text-xs lg:text-[16px] 14i:text-xl">
+                                            photo-editing agency for all your...
+                                        </p>
+                                        <p
+                                            class="text-[#F76D4A] font-[500] text-sm lg:text-[18px] 14i:text-[20px] flex items-center gap-2">
+                                            <span>Read More</span> <img src="../../../assets/Arrow.png" alt="arrow">
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- service card 8 -->
+                            <a href="./blogDetails.html">
+                                <div
+                                    class="w-full sm:w-[250px] xl:w-[300px] 14i:w-[350px] 15i:w-[437px] border-[1px] border-[#5A4EAE] rounded-[30px]">
+                                    <!-- image container -->
+                                    <div
+                                        class="bg-[#EFEDF7] h-[300px] sm:h-[250px] xl:h-[300px] 14i:h-[350px] 15i:h-[437px] w-full rounded-t-[30px]">
+                                    </div>
+                                    <!-- description -->
+                                    <div
+                                        class="bg-[#FEFEFE] rounded-b-[30px] py-[20px] 15i:pt-[27px] 15i:pb-[38px] px-4 xl:px-6 15i:px-[34px]">
+                                        <p class="text-[#262149] font-[500] text-[20px] leading-[24px] 14i:text-[28px]">
+                                            Welcome to Dot Clipping, your go-to...
+                                        </p>
+                                        <p class="text-[#262149] pt-5 pb-[30px] text-xs lg:text-[16px] 14i:text-xl">
+                                            photo-editing agency for all your...
+                                        </p>
+                                        <p
+                                            class="text-[#F76D4A] font-[500] text-sm lg:text-[18px] 14i:text-[20px] flex items-center gap-2">
+                                            <span>Read More</span> <img src="../../../assets/Arrow.png" alt="arrow">
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- service card 9 -->
+                            <a href="./blogDetails.html">
+                                <div
+                                    class="w-full sm:w-[250px] xl:w-[300px] 14i:w-[350px] 15i:w-[437px] border-[1px] border-[#5A4EAE] rounded-[30px]">
+                                    <!-- image container -->
+                                    <div
+                                        class="bg-[#EFEDF7] h-[300px] sm:h-[250px] xl:h-[300px] 14i:h-[350px] 15i:h-[437px] w-full rounded-t-[30px]">
+                                    </div>
+                                    <!-- description -->
+                                    <div
+                                        class="bg-[#FEFEFE] rounded-b-[30px] py-[20px] 15i:pt-[27px] 15i:pb-[38px] px-4 xl:px-6 15i:px-[34px]">
+                                        <p class="text-[#262149] font-[500] text-[20px] leading-[24px] 14i:text-[28px]">
+                                            Welcome to Dot Clipping, your go-to...
+                                        </p>
+                                        <p class="text-[#262149] pt-5 pb-[30px] text-xs lg:text-[16px] 14i:text-xl">
+                                            photo-editing agency for all your...
+                                        </p>
+                                        <p
+                                            class="text-[#F76D4A] font-[500] text-sm lg:text-[18px] 14i:text-[20px] flex items-center gap-2">
+                                            <span>Read More</span> <img src="../../../assets/Arrow.png" alt="arrow">
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- slide 3 -->
+                    <div class="swiper-slide">
+                        <!-- main slide content -->
+                        <div
+                            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[30px] w-full sm:w-fit sm:mx-auto bg-green-400">
+                            <!-- service card 1 -->
+                            <a href="./blogDetails.html">
+                                <div
+                                    class="w-full sm:w-[250px] xl:w-[300px] 14i:w-[350px] 15i:w-[437px] border-[1px] border-[#5A4EAE] rounded-[30px]">
+                                    <!-- image container -->
+                                    <div
+                                        class="bg-[#EFEDF7] h-[300px] sm:h-[250px] xl:h-[300px] 14i:h-[350px] 15i:h-[437px] w-full rounded-t-[30px]">
+                                    </div>
+                                    <!-- description -->
+                                    <div
+                                        class="bg-[#FEFEFE] rounded-b-[30px] py-[20px] 15i:pt-[27px] 15i:pb-[38px] px-4 xl:px-6 15i:px-[34px]">
+                                        <p class="text-[#262149] font-[500] text-[20px] leading-[24px] 14i:text-[28px]">
+                                            Welcome to Dot Clipping, your go-to...
+                                        </p>
+                                        <p class="text-[#262149] pt-5 pb-[30px] text-xs lg:text-[16px] 14i:text-xl">
+                                            photo-editing agency for all your...
+                                        </p>
+                                        <p
+                                            class="text-[#F76D4A] font-[500] text-sm lg:text-[18px] 14i:text-[20px] flex items-center gap-2">
+                                            <span>Read More</span> <img src="../../../assets/Arrow.png" alt="arrow">
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- service card 2 -->
+                            <a href="./blogDetails.html">
+                                <div
+                                    class="w-full sm:w-[250px] xl:w-[300px] 14i:w-[350px] 15i:w-[437px] border-[1px] border-[#5A4EAE] rounded-[30px]">
+                                    <!-- image container -->
+                                    <div
+                                        class="bg-[#EFEDF7] h-[300px] sm:h-[250px] xl:h-[300px] 14i:h-[350px] 15i:h-[437px] w-full rounded-t-[30px]">
+                                    </div>
+                                    <!-- description -->
+                                    <div
+                                        class="bg-[#FEFEFE] rounded-b-[30px] py-[20px] 15i:pt-[27px] 15i:pb-[38px] px-4 xl:px-6 15i:px-[34px]">
+                                        <p class="text-[#262149] font-[500] text-[20px] leading-[24px] 14i:text-[28px]">
+                                            Welcome to Dot Clipping, your go-to...
+                                        </p>
+                                        <p class="text-[#262149] pt-5 pb-[30px] text-xs lg:text-[16px] 14i:text-xl">
+                                            photo-editing agency for all your...
+                                        </p>
+                                        <p
+                                            class="text-[#F76D4A] font-[500] text-sm lg:text-[18px] 14i:text-[20px] flex items-center gap-2">
+                                            <span>Read More</span> <img src="../../../assets/Arrow.png" alt="arrow">
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- service card 3 -->
+                            <a href="./blogDetails.html">
+                                <div
+                                    class="w-full sm:w-[250px] xl:w-[300px] 14i:w-[350px] 15i:w-[437px] border-[1px] border-[#5A4EAE] rounded-[30px]">
+                                    <!-- image container -->
+                                    <div
+                                        class="bg-[#EFEDF7] h-[300px] sm:h-[250px] xl:h-[300px] 14i:h-[350px] 15i:h-[437px] w-full rounded-t-[30px]">
+                                    </div>
+                                    <!-- description -->
+                                    <div
+                                        class="bg-[#FEFEFE] rounded-b-[30px] py-[20px] 15i:pt-[27px] 15i:pb-[38px] px-4 xl:px-6 15i:px-[34px]">
+                                        <p class="text-[#262149] font-[500] text-[20px] leading-[24px] 14i:text-[28px]">
+                                            Welcome to Dot Clipping, your go-to...
+                                        </p>
+                                        <p class="text-[#262149] pt-5 pb-[30px] text-xs lg:text-[16px] 14i:text-xl">
+                                            photo-editing agency for all your...
+                                        </p>
+                                        <p
+                                            class="text-[#F76D4A] font-[500] text-sm lg:text-[18px] 14i:text-[20px] flex items-center gap-2">
+                                            <span>Read More</span> <img src="../../../assets/Arrow.png" alt="arrow">
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- service card 4 -->
+                            <a href="./blogDetails.html">
+                                <div
+                                    class="w-full sm:w-[250px] xl:w-[300px] 14i:w-[350px] 15i:w-[437px] border-[1px] border-[#5A4EAE] rounded-[30px]">
+                                    <!-- image container -->
+                                    <div
+                                        class="bg-[#EFEDF7] h-[300px] sm:h-[250px] xl:h-[300px] 14i:h-[350px] 15i:h-[437px] w-full rounded-t-[30px]">
+                                    </div>
+                                    <!-- description -->
+                                    <div
+                                        class="bg-[#FEFEFE] rounded-b-[30px] py-[20px] 15i:pt-[27px] 15i:pb-[38px] px-4 xl:px-6 15i:px-[34px]">
+                                        <p class="text-[#262149] font-[500] text-[20px] leading-[24px] 14i:text-[28px]">
+                                            Welcome to Dot Clipping, your go-to...
+                                        </p>
+                                        <p class="text-[#262149] pt-5 pb-[30px] text-xs lg:text-[16px] 14i:text-xl">
+                                            photo-editing agency for all your...
+                                        </p>
+                                        <p
+                                            class="text-[#F76D4A] font-[500] text-sm lg:text-[18px] 14i:text-[20px] flex items-center gap-2">
+                                            <span>Read More</span> <img src="../../../assets/Arrow.png" alt="arrow">
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- service card 5 -->
+                            <a href="./blogDetails.html">
+                                <div
+                                    class="w-full sm:w-[250px] xl:w-[300px] 14i:w-[350px] 15i:w-[437px] border-[1px] border-[#5A4EAE] rounded-[30px]">
+                                    <!-- image container -->
+                                    <div
+                                        class="bg-[#EFEDF7] h-[300px] sm:h-[250px] xl:h-[300px] 14i:h-[350px] 15i:h-[437px] w-full rounded-t-[30px]">
+                                    </div>
+                                    <!-- description -->
+                                    <div
+                                        class="bg-[#FEFEFE] rounded-b-[30px] py-[20px] 15i:pt-[27px] 15i:pb-[38px] px-4 xl:px-6 15i:px-[34px]">
+                                        <p class="text-[#262149] font-[500] text-[20px] leading-[24px] 14i:text-[28px]">
+                                            Welcome to Dot Clipping, your go-to...
+                                        </p>
+                                        <p class="text-[#262149] pt-5 pb-[30px] text-xs lg:text-[16px] 14i:text-xl">
+                                            photo-editing agency for all your...
+                                        </p>
+                                        <p
+                                            class="text-[#F76D4A] font-[500] text-sm lg:text-[18px] 14i:text-[20px] flex items-center gap-2">
+                                            <span>Read More</span> <img src="../../../assets/Arrow.png" alt="arrow">
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- service card 6 -->
+                            <a href="./blogDetails.html">
+                                <div
+                                    class="w-full sm:w-[250px] xl:w-[300px] 14i:w-[350px] 15i:w-[437px] border-[1px] border-[#5A4EAE] rounded-[30px]">
+                                    <!-- image container -->
+                                    <div
+                                        class="bg-[#EFEDF7] h-[300px] sm:h-[250px] xl:h-[300px] 14i:h-[350px] 15i:h-[437px] w-full rounded-t-[30px]">
+                                    </div>
+                                    <!-- description -->
+                                    <div
+                                        class="bg-[#FEFEFE] rounded-b-[30px] py-[20px] 15i:pt-[27px] 15i:pb-[38px] px-4 xl:px-6 15i:px-[34px]">
+                                        <p class="text-[#262149] font-[500] text-[20px] leading-[24px] 14i:text-[28px]">
+                                            Welcome to Dot Clipping, your go-to...
+                                        </p>
+                                        <p class="text-[#262149] pt-5 pb-[30px] text-xs lg:text-[16px] 14i:text-xl">
+                                            photo-editing agency for all your...
+                                        </p>
+                                        <p
+                                            class="text-[#F76D4A] font-[500] text-sm lg:text-[18px] 14i:text-[20px] flex items-center gap-2">
+                                            <span>Read More</span> <img src="../../../assets/Arrow.png" alt="arrow">
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- service card 7 -->
+                            <a href="./blogDetails.html">
+                                <div
+                                    class="w-full sm:w-[250px] xl:w-[300px] 14i:w-[350px] 15i:w-[437px] border-[1px] border-[#5A4EAE] rounded-[30px]">
+                                    <!-- image container -->
+                                    <div
+                                        class="bg-[#EFEDF7] h-[300px] sm:h-[250px] xl:h-[300px] 14i:h-[350px] 15i:h-[437px] w-full rounded-t-[30px]">
+                                    </div>
+                                    <!-- description -->
+                                    <div
+                                        class="bg-[#FEFEFE] rounded-b-[30px] py-[20px] 15i:pt-[27px] 15i:pb-[38px] px-4 xl:px-6 15i:px-[34px]">
+                                        <p class="text-[#262149] font-[500] text-[20px] leading-[24px] 14i:text-[28px]">
+                                            Welcome to Dot Clipping, your go-to...
+                                        </p>
+                                        <p class="text-[#262149] pt-5 pb-[30px] text-xs lg:text-[16px] 14i:text-xl">
+                                            photo-editing agency for all your...
+                                        </p>
+                                        <p
+                                            class="text-[#F76D4A] font-[500] text-sm lg:text-[18px] 14i:text-[20px] flex items-center gap-2">
+                                            <span>Read More</span> <img src="../../../assets/Arrow.png" alt="arrow">
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- service card 8 -->
+                            <a href="./blogDetails.html">
+                                <div
+                                    class="w-full sm:w-[250px] xl:w-[300px] 14i:w-[350px] 15i:w-[437px] border-[1px] border-[#5A4EAE] rounded-[30px]">
+                                    <!-- image container -->
+                                    <div
+                                        class="bg-[#EFEDF7] h-[300px] sm:h-[250px] xl:h-[300px] 14i:h-[350px] 15i:h-[437px] w-full rounded-t-[30px]">
+                                    </div>
+                                    <!-- description -->
+                                    <div
+                                        class="bg-[#FEFEFE] rounded-b-[30px] py-[20px] 15i:pt-[27px] 15i:pb-[38px] px-4 xl:px-6 15i:px-[34px]">
+                                        <p class="text-[#262149] font-[500] text-[20px] leading-[24px] 14i:text-[28px]">
+                                            Welcome to Dot Clipping, your go-to...
+                                        </p>
+                                        <p class="text-[#262149] pt-5 pb-[30px] text-xs lg:text-[16px] 14i:text-xl">
+                                            photo-editing agency for all your...
+                                        </p>
+                                        <p
+                                            class="text-[#F76D4A] font-[500] text-sm lg:text-[18px] 14i:text-[20px] flex items-center gap-2">
+                                            <span>Read More</span> <img src="../../../assets/Arrow.png" alt="arrow">
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- service card 9 -->
+                            <a href="./blogDetails.html">
+                                <div
+                                    class="w-full sm:w-[250px] xl:w-[300px] 14i:w-[350px] 15i:w-[437px] border-[1px] border-[#5A4EAE] rounded-[30px]">
+                                    <!-- image container -->
+                                    <div
+                                        class="bg-[#EFEDF7] h-[300px] sm:h-[250px] xl:h-[300px] 14i:h-[350px] 15i:h-[437px] w-full rounded-t-[30px]">
+                                    </div>
+                                    <!-- description -->
+                                    <div
+                                        class="bg-[#FEFEFE] rounded-b-[30px] py-[20px] 15i:pt-[27px] 15i:pb-[38px] px-4 xl:px-6 15i:px-[34px]">
+                                        <p class="text-[#262149] font-[500] text-[20px] leading-[24px] 14i:text-[28px]">
+                                            Welcome to Dot Clipping, your go-to...
+                                        </p>
+                                        <p class="text-[#262149] pt-5 pb-[30px] text-xs lg:text-[16px] 14i:text-xl">
+                                            photo-editing agency for all your...
+                                        </p>
+                                        <p
+                                            class="text-[#F76D4A] font-[500] text-sm lg:text-[18px] 14i:text-[20px] flex items-center gap-2">
+                                            <span>Read More</span> <img src="../../../assets/Arrow.png" alt="arrow">
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </a>
+
+                <div class="swiper-button-prev" id="prev"></div>
+                <div class="swiper-pagination bg-purple-600" id="pageNo"></div>
+                <div class="swiper-button-next" id="next"></div>
+            </div>
         </section>
     </main>
 
@@ -261,7 +1019,7 @@
         </div>
     </footer>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         // sidebar handling---------------
         const showSidebar = () => {
@@ -272,13 +1030,37 @@
             document.getElementById("sidebar").classList.remove("w-[70vw]")
             document.getElementById("sidebar").classList.add("w-0")
         }
+
         // swiper-------------------------
+        //initialize swiper
         var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                renderBullet: function (index, className) {
+                    return '<span class="' + className + '">' + (index + 1) + "</span>";
+                },
+            },
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
             },
         });
+
+
+        // set the value of left and right for navigation button
+        const setDistance = () => {
+            const x = Number(document.getElementById("pageNo").offsetWidth)
+            const y = Number(window.innerWidth)
+            const z = (y - x) / 2
+
+            document.getElementById("prev").style.left = `${z - 63}px`
+            document.getElementById("next").style.right = `${z - 63}px`
+            document.getElementById("a").innerHTML = z
+        }
+        setDistance()
+
+        window.addEventListener("resize", setDistance)
     </script>
 </body>
 
