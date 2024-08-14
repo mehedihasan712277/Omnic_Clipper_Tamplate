@@ -1064,14 +1064,41 @@
         });
 
         // image divider--------------------
+        // document.querySelectorAll('.image-comparison-container').forEach(container => {
+        //     const resizableDiv = container.querySelector('.resizable-div');
+        //     const resizer = container.querySelector('.resizer');
+
+        //     resizer.addEventListener('mousedown', function (e) {
+        //         e.preventDefault();
+        //         document.addEventListener('mousemove', resize);
+        //         document.addEventListener('mouseup', stopResize);
+        //     });
+
+        //     function resize(e) {
+        //         resizableDiv.style.width = e.pageX - resizableDiv.getBoundingClientRect().left + 'px';
+        //     }
+
+        //     function stopResize() {
+        //         document.removeEventListener('mousemove', resize);
+        //         document.removeEventListener('mouseup', stopResize);
+        //     }
+        // });
         document.querySelectorAll('.image-comparison-container').forEach(container => {
             const resizableDiv = container.querySelector('.resizable-div');
             const resizer = container.querySelector('.resizer');
 
+            // Mouse events for desktop
             resizer.addEventListener('mousedown', function (e) {
                 e.preventDefault();
                 document.addEventListener('mousemove', resize);
                 document.addEventListener('mouseup', stopResize);
+            });
+
+            // Touch events for mobile
+            resizer.addEventListener('touchstart', function (e) {
+                e.preventDefault();
+                document.addEventListener('touchmove', resizeTouch);
+                document.addEventListener('touchend', stopResizeTouch);
             });
 
             function resize(e) {
@@ -1081,6 +1108,16 @@
             function stopResize() {
                 document.removeEventListener('mousemove', resize);
                 document.removeEventListener('mouseup', stopResize);
+            }
+
+            function resizeTouch(e) {
+                const touch = e.touches[0];
+                resizableDiv.style.width = touch.pageX - resizableDiv.getBoundingClientRect().left + 'px';
+            }
+
+            function stopResizeTouch() {
+                document.removeEventListener('touchmove', resizeTouch);
+                document.removeEventListener('touchend', stopResizeTouch);
             }
         });
 
