@@ -38,27 +38,21 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
-                background-color: red;
-                padding-bottom: 74px;
+                padding-bottom: 134px;
                 position: relative;
-            }
-
-            .swiper-wrapper {
-                background-color: yellow;
             }
 
             .swiper-slide {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                background-color: blue;
             }
 
             .swiper-pagination {
                 display: inline-block;
                 width: fit-content !important;
                 position: absolute;
-                bottom: 10px !important;
+                bottom: 0 !important;
                 left: 0;
                 right: 0;
                 margin: 0 auto;
@@ -96,7 +90,7 @@
 
                 z-index: 100;
                 position: absolute;
-                bottom: 10px;
+                bottom: 0;
                 top: auto;
             }
 
@@ -953,13 +947,13 @@
                     </div>
 
                     <div class="swiper-button-prev" id="prev"></div>
-                    <div class="swiper-pagination bg-purple-600" id="pageNo"></div>
+                    <div class="swiper-pagination" id="pageNo"></div>
                     <div class="swiper-button-next" id="next"></div>
                 </div>
             </div>
 
             <!-------------slider for small device---------->
-            <div class="lg:hidden px-4 bg-green-400">
+            <div class="lg:hidden px-4">
                 <div class="swiper mySwiper1">
                     <div class="swiper-wrapper">
                         <!-- slide 1 -->
@@ -1385,6 +1379,7 @@
             }
             else {
                 var swiper1 = new Swiper(".mySwiper1", {
+                    spaceBetween: 5,
                     pagination: {
                         el: ".swiper-pagination",
                         type: "fraction",
