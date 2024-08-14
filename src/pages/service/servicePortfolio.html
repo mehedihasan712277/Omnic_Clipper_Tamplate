@@ -753,21 +753,40 @@
             const resizableDiv = container.querySelector('.resizable-div');
             const resizer = container.querySelector('.resizer');
 
-            resizer.addEventListener('mousedown', function (e) {
+            // Mouse events for desktop
+            resizer.addEventListener('mousedown', (e) => {
                 e.preventDefault();
                 document.addEventListener('mousemove', resize);
                 document.addEventListener('mouseup', stopResize);
             });
 
-            function resize(e) {
+            // Touch events for mobile
+            resizer.addEventListener('touchstart', (e) => {
+                e.preventDefault();
+                document.addEventListener('touchmove', resizeTouch);
+                document.addEventListener('touchend', stopResizeTouch);
+            });
+
+            const resize = (e) => {
                 resizableDiv.style.width = e.pageX - resizableDiv.getBoundingClientRect().left + 'px';
             }
 
-            function stopResize() {
+            const stopResize = () => {
                 document.removeEventListener('mousemove', resize);
                 document.removeEventListener('mouseup', stopResize);
             }
+
+            const resizeTouch = (e) => {
+                const touch = e.touches[0];
+                resizableDiv.style.width = touch.pageX - resizableDiv.getBoundingClientRect().left + 'px';
+            }
+
+            const stopResizeTouch = () => {
+                document.removeEventListener('touchmove', resizeTouch);
+                document.removeEventListener('touchend', stopResizeTouch);
+            }
         });
+
     </script>
 </body>
 
