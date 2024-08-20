@@ -761,6 +761,10 @@ video {
   height: 100%;
 }
 
+.h-\[calc\(95vw-40px\)\] {
+  height: calc(95vw - 40px);
+}
+
 .w-0 {
   width: 0px;
 }
