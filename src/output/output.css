@@ -576,6 +576,12 @@ video {
   }
 }
 
+@media (min-width: 576px) {
+  .container {
+    max-width: 576px;
+  }
+}
+
 @media (min-width: 640px) {
   .container {
     max-width: 640px;
@@ -737,6 +743,10 @@ video {
   height: 5rem;
 }
 
+.h-4 {
+  height: 1rem;
+}
+
 .h-8 {
   height: 2rem;
 }
@@ -769,16 +779,16 @@ video {
   height: 58px;
 }
 
+.h-\[calc\(100vw-32px\)\] {
+  height: calc(100vw - 32px);
+}
+
 .h-\[calc\(95vw-40px\)\] {
   height: calc(95vw - 40px);
 }
 
 .h-full {
   height: 100%;
-}
-
-.h-4 {
-  height: 1rem;
 }
 
 .w-0 {
@@ -793,12 +803,12 @@ video {
   width: 5rem;
 }
 
-.w-6 {
-  width: 1.5rem;
+.w-4 {
+  width: 1rem;
 }
 
-.w-8 {
-  width: 2rem;
+.w-6 {
+  width: 1.5rem;
 }
 
 .w-\[140px\] {
@@ -836,10 +846,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-4 {
-  width: 1rem;
 }
 
 .max-w-\[1510px\] {
@@ -1678,6 +1684,10 @@ video {
     height: 400px;
   }
 
+  .ml\:h-\[calc\(100vw-64px\)\] {
+    height: calc(100vw - 64px);
+  }
+
   .ml\:w-\[180px\] {
     width: 180px;
   }
@@ -1694,6 +1704,11 @@ video {
     gap: 1rem;
   }
 
+  .ml\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
   .ml\:text-\[16px\] {
     font-size: 16px;
   }
@@ -1703,10 +1718,33 @@ video {
   }
 }
 
+@media (min-width: 576px) {
+  .mv\:h-\[calc\(100vw-96px\)\] {
+    height: calc(100vw - 96px);
+  }
+
+  .mv\:w-\[250px\] {
+    width: 250px;
+  }
+
+  .mv\:gap-4 {
+    gap: 1rem;
+  }
+
+  .mv\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
 @media (min-width: 640px) {
   .sm\:mx-auto {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .sm\:h-8 {
+    height: 2rem;
   }
 
   .sm\:h-\[100px\] {
@@ -1717,8 +1755,8 @@ video {
     height: 250px;
   }
 
-  .sm\:h-8 {
-    height: 2rem;
+  .sm\:w-8 {
+    width: 2rem;
   }
 
   .sm\:w-\[200px\] {
@@ -1754,10 +1792,6 @@ video {
     width: fit-content;
   }
 
-  .sm\:w-8 {
-    width: 2rem;
-  }
-
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1769,6 +1803,11 @@ video {
   .sm\:px-12 {
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+
+  .sm\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .sm\:px-6 {
@@ -2163,6 +2202,10 @@ video {
     width: 200px;
   }
 
+  .lg\:w-\[227px\] {
+    width: 227px;
+  }
+
   .lg\:w-\[400px\] {
     width: 400px;
   }
@@ -2170,10 +2213,6 @@ video {
   .lg\:w-fit {
     width: -moz-fit-content;
     width: fit-content;
-  }
-
-  .lg\:w-\[227px\] {
-    width: 227px;
   }
 
   .lg\:max-w-\[400px\] {
