@@ -16,6 +16,7 @@ module.exports = {
       fontFamily: {
         arc: ['Archivo', 'sans-serif'],
         // abc: ["Grey Qo", 'cursive']
+        axiforma: ['Axiforma', 'sans-serif'],
       },
     },
   },
