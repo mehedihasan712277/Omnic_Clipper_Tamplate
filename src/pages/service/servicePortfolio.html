@@ -10,6 +10,103 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Custom styles -->
+    <style>
+        .swiper {
+            width: 100%;
+            height: 250px;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 30px;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 30px;
+        }
+
+        .swiper-slide {
+            width: 250px;
+        }
+
+        /* Custom navigation button styles */
+        .swiper-button-next,
+        .swiper-button-prev {
+            width: 60px;
+            height: 53px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .swiper-button-next::after,
+        .swiper-button-prev::after {
+            content: '';
+        }
+
+        .swiper-button-prev {
+            background-image: url('../../../assets/prev.png');
+        }
+
+        .swiper-button-next {
+            background-image: url('../../../assets/next.png');
+        }
+
+
+        /* responsive */
+        @media only screen and (min-width: 768px) {
+            .swiper {
+                height: 350px;
+            }
+
+            .swiper-slide {
+                width: 350px;
+            }
+        }
+
+        @media only screen and (min-width: 1024px) {
+            .swiper {
+                height: 400px;
+            }
+
+            .swiper-slide {
+                width: 400px;
+            }
+        }
+
+        @media only screen and (min-width: 1280px) {
+            .swiper {
+                height: 500px;
+            }
+
+            .swiper-slide {
+                width: 500px;
+            }
+        }
+
+        @media only screen and (min-width: 1510px) {
+            .swiper {
+                height: 550px;
+            }
+
+            .swiper-slide {
+                width: 550px;
+            }
+        }
+    </style>
 </head>
 
 <body class="font-arc">
@@ -85,6 +182,52 @@
             </a>
         </div>
     </nav>
+
+    <!-- =========================pop up================================ -->
+    <div id="popup"
+        class="bg-[#262149] bg-opacity-80 hidden fixed z-[5000] h-screen top-0 bottom-0 left-0 right-0 max-w-[1510px] mx-auto">
+        <div class="h-screen flex items-center justify-center relative">
+            <button class="absolute right-2 top-2" onclick="hidePopUp()">
+                <img src="../../../assets/close.png" alt="close" class="w-8 h-8 15i:w-16 15i:h-16">
+            </button>
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="../../../assets/serviceImg.png" alt="img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../../../assets/serviceImg.png" alt="img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../../../assets/serviceImg.png" alt="img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../../../assets/serviceImg.png" alt="img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../../../assets/serviceImg.png" alt="img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../../../assets/serviceImg.png" alt="img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../../../assets/serviceImg.png" alt="img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../../../assets/serviceImg.png" alt="img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../../../assets/serviceImg.png" alt="img">
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <!-- <div class="swiper-pagination"></div> -->
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </div>
+
 
     <main>
         <!-- ======================banner=============================== -->
@@ -183,7 +326,7 @@
                         aonsectetu
                     </p>
 
-                    <button
+                    <button onclick="showPopup()"
                         class="text-[#F76D4A] border-[#F76D4A] border-[1px] text-[20px] leading-[21px] font-[500] rounded-[10px] py-[22px] w-full sm:w-[292px] transition-all ease-in-out hover:bg-[#F76D4A] hover:text-[#FCFCFC] active:scale-95">
                         See More Example
                     </button>
@@ -253,7 +396,7 @@
                         aonsectetu
                     </p>
 
-                    <button
+                    <button onclick="showPopup()"
                         class="text-[#F76D4A] border-[#F76D4A] border-[1px] text-[20px] leading-[21px] font-[500] rounded-[10px] py-[22px] w-full sm:w-[292px] transition-all ease-in-out hover:bg-[#F76D4A] hover:text-[#FCFCFC] active:scale-95">
                         See More Example
                     </button>
@@ -323,7 +466,7 @@
                         aonsectetu
                     </p>
 
-                    <button
+                    <button onclick="showPopup()"
                         class="text-[#F76D4A] border-[#F76D4A] border-[1px] text-[20px] leading-[21px] font-[500] rounded-[10px] py-[22px] w-full sm:w-[292px] transition-all ease-in-out hover:bg-[#F76D4A] hover:text-[#FCFCFC] active:scale-95">
                         See More Example
                     </button>
@@ -393,7 +536,7 @@
                         aonsectetu
                     </p>
 
-                    <button
+                    <button onclick="showPopup()"
                         class="text-[#F76D4A] border-[#F76D4A] border-[1px] text-[20px] leading-[21px] font-[500] rounded-[10px] py-[22px] w-full sm:w-[292px] transition-all ease-in-out hover:bg-[#F76D4A] hover:text-[#FCFCFC] active:scale-95">
                         See More Example
                     </button>
@@ -463,7 +606,7 @@
                         aonsectetu
                     </p>
 
-                    <button
+                    <button onclick="showPopup()"
                         class="text-[#F76D4A] border-[#F76D4A] border-[1px] text-[20px] leading-[21px] font-[500] rounded-[10px] py-[22px] w-full sm:w-[292px] transition-all ease-in-out hover:bg-[#F76D4A] hover:text-[#FCFCFC] active:scale-95">
                         See More Example
                     </button>
@@ -533,7 +676,7 @@
                         aonsectetu
                     </p>
 
-                    <button
+                    <button onclick="showPopup()"
                         class="text-[#F76D4A] border-[#F76D4A] border-[1px] text-[20px] leading-[21px] font-[500] rounded-[10px] py-[22px] w-full sm:w-[292px] transition-all ease-in-out hover:bg-[#F76D4A] hover:text-[#FCFCFC] active:scale-95">
                         See More Example
                     </button>
@@ -725,6 +868,8 @@
         </div>
     </footer>
     <!-- -------------scripts------------ -->
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         // sidebar handling---------------
         const showSidebar = () => {
@@ -774,6 +919,32 @@
             }
         });
 
+
+
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: "auto",
+            centeredSlides: true,
+            spaceBetween: 60,
+            initialSlide: 1,  // Start at the 2nd slide (index 1)
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+
+        const showPopup = () => {
+            document.getElementById("popup").classList.remove("hidden");
+            document.getElementById("popup").classList.add("block");
+        }
+        const hidePopUp = () => {
+            document.getElementById("popup").classList.remove("block");
+            document.getElementById("popup").classList.add("hidden");
+        }
     </script>
 </body>
 
