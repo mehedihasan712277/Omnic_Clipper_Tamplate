@@ -652,8 +652,8 @@ video {
   right: 0px;
 }
 
-.right-2 {
-  right: 0.5rem;
+.right-4 {
+  right: 1rem;
 }
 
 .top-0 {
@@ -662,14 +662,6 @@ video {
 
 .top-1\/2 {
   top: 50%;
-}
-
-.top-2 {
-  top: 0.5rem;
-}
-
-.right-4 {
-  right: 1rem;
 }
 
 .top-4 {
@@ -811,6 +803,10 @@ video {
   height: 58px;
 }
 
+.h-\[82px\] {
+  height: 82px;
+}
+
 .h-\[calc\(100vw-32px\)\] {
   height: calc(100vw - 32px);
 }
@@ -825,10 +821,6 @@ video {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-\[82px\] {
-  height: 82px;
 }
 
 .w-0 {
@@ -849,6 +841,10 @@ video {
 
 .w-6 {
   width: 1.5rem;
+}
+
+.w-8 {
+  width: 2rem;
 }
 
 .w-\[140px\] {
@@ -875,6 +871,10 @@ video {
   width: 70vw;
 }
 
+.w-\[82px\] {
+  width: 82px;
+}
+
 .w-\[calc\(95vw-40px\)\] {
   width: calc(95vw - 40px);
 }
@@ -886,14 +886,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-8 {
-  width: 2rem;
-}
-
-.w-\[82px\] {
-  width: 82px;
 }
 
 .max-w-\[1510px\] {
@@ -1101,12 +1093,6 @@ video {
   margin-bottom: calc(54px * var(--tw-space-y-reverse));
 }
 
-.space-x-4 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(1rem * var(--tw-space-x-reverse));
-  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
 .overflow-x-hidden {
   overflow-x: hidden;
 }
@@ -1268,18 +1254,9 @@ video {
   background-color: rgb(254 254 254 / var(--tw-bg-opacity));
 }
 
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-opacity-50 {
-  --tw-bg-opacity: 0.5;
 }
 
 .bg-opacity-80 {
@@ -1805,10 +1782,6 @@ video {
     width: 400px;
   }
 
-  .ml\:flex-row {
-    flex-direction: row;
-  }
-
   .ml\:gap-4 {
     gap: 1rem;
   }
@@ -1998,10 +1971,6 @@ video {
 
   .md\:grid {
     display: grid;
-  }
-
-  .md\:hidden {
-    display: none;
   }
 
   .md\:h-12 {
@@ -3093,6 +3062,10 @@ video {
     display: block;
   }
 
+  .\31 5i\:h-16 {
+    height: 4rem;
+  }
+
   .\31 5i\:h-\[250px\] {
     height: 250px;
   }
@@ -3129,8 +3102,8 @@ video {
     height: 912px;
   }
 
-  .\31 5i\:h-16 {
-    height: 4rem;
+  .\31 5i\:w-16 {
+    width: 4rem;
   }
 
   .\31 5i\:w-\[428px\] {
@@ -3167,10 +3140,6 @@ video {
 
   .\31 5i\:w-\[912px\] {
     width: 912px;
-  }
-
-  .\31 5i\:w-16 {
-    width: 4rem;
   }
 
   .\31 5i\:gap-24 {
