@@ -1777,6 +1777,10 @@ video {
 }
 
 @media (min-width: 425px) {
+  .ml\:hidden {
+    display: none;
+  }
+
   .ml\:h-\[30px\] {
     height: 30px;
   }
