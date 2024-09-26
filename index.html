@@ -103,17 +103,13 @@
 
 <body class="select-none font-arc">
     <!-- =========================navigation bar========================= -->
-    <nav class="bg-[#F8F8F1]">
+    <nav class="bg-[#F8F8F1] sticky top-0 z-[10000]">
         <div
             class="flex justify-between items-center px-4 sm:px-8 md:px-12 xl:px-20 py-4 md:py-6 14i:py-8 15i:py-[33px] max-w-[1510px] mx-auto">
             <div class="flex items-center gap-4 flex-row-reverse">
                 <!-- logo -->
                 <div>
                     <img src="./assets/Primary Logo.png" alt="logo" class="h-8 md:h-12 15i:h-[65px]">
-                </div>
-                <!-- -------------list icon for small device----------- -->
-                <div class="lg:hidden text-[30px]" onclick="showSidebar()">
-                    <i class="fa-solid fa-list"></i>
                 </div>
             </div>
 
@@ -140,7 +136,7 @@
             </div>
 
             <!-- --------------mane for small device------------ -->
-            <div class="lg:hidden fixed z-[1000] top-0 left-0 bottom-0 bg-[#262149] pt-4 w-0 overflow-x-hidden transition-width ease-in-out duration-300"
+            <div class="lg:hidden fixed top-0 left-0 bottom-0 bg-[#262149] pt-4 w-0 overflow-x-hidden transition-width ease-in-out duration-300"
                 id="sidebar">
                 <div class="flex justify-between">
                     <div class="text-2xl font-bold text-white pl-8">
@@ -148,8 +144,9 @@
                         <p>Clipper</p>
                     </div>
                     <div class="pr-4">
-                        <p onclick="hideSidebar()" class="bg-white w-6 leading-6 text-center rounded-full"><i
-                                class="fa-solid fa-xmark"></i></p>
+                        <p onclick="hideSidebar()" class="text-2xl text-white">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </p>
                     </div>
                 </div>
                 <ul class="text-xl text-gray-200 font-semibold mt-20 px-8 space-y-2">
@@ -171,13 +168,19 @@
                 </ul>
             </div>
 
-            <!-- order -->
-            <a href="./src/pages/pricing/order.html">
-                <button
-                    class=" text-[#EFEDF7] bg-[#5A4EAE] text-sm 15i:text-[20px] 15i:leading-[21px] px-4 sm:px-6 py-2 sm:py-4 15i:px-8 15i:py-0 15i:h-[58px] rounded-[10px] transition-all ease-in-out duration-150 active:scale-95 hover:bg-[#F76D4A] hover:text-white">
-                    Make an Order
-                </button>
-            </a>
+            <div class="flex items-center gap-2">
+                <!-- order -->
+                <a href="./src/pages/pricing/order.html">
+                    <button
+                        class=" text-[#EFEDF7] bg-[#5A4EAE] text-sm 15i:text-[20px] 15i:leading-[21px] px-4 sm:px-6 py-2 sm:py-4 15i:px-8 15i:py-0 15i:h-[58px] rounded-[10px] transition-all ease-in-out duration-150 active:scale-95 hover:bg-[#F76D4A] hover:text-white">
+                        Make an Order
+                    </button>
+                </a>
+                <!-- -------------list icon for small device----------- -->
+                <div class="lg:hidden text-[30px]" onclick="showSidebar()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
         </div>
     </nav>
 
@@ -186,7 +189,7 @@
     <main>
         <!-- ============================Banner section========================= -->
         <section class="px-4 sm:px-8 md:px-12 14i:px-20 max-w-[1510px] mx-auto">
-            <div class="flex justify-between gap-4 14i:gap-20 15i:gap-[140px] my-[57px]">
+            <div class="flex justify-between gap-4 14i:gap-20 15i:gap-[140px] mt-[57px] mb-[120px]">
                 <!-- left part -->
                 <div class="flex-1 flex flex-col justify-center ">
                     <div
@@ -237,10 +240,8 @@
                     </p>
                     <p
                         class="text-[#EFEDF7] text-sm 14i:text-[20px] 14i:leading-[28px] pt-[15px] 14i:pt-[30px] pb-[25px] 14i:pb-[50px] max-w-[676px] mx-auto">
-                        Welcome to Dot Clipping, your go-to photo-editing agency for all your image editing needs. At
-                        Dot
-                        Clipping, we
-                        understand Welcome
+                        Welcome to OMNIC CLIPPER, Receive flawless, sale-ready images fast, resized, and formatted to
+                        your needs.
                     </p>
                     <a href="./src/pages/service/service.html" class="w-full sm:w-fit">
                         <button
@@ -258,16 +259,18 @@
                             <div
                                 class="bg-[#FEFEFE] rounded-t-[35px] py-[20px] 14i:pt-[35px] 14i:pb-[30px] px-4 xl:px-6 15i:px-[30px]">
                                 <p
-                                    class="text-[#262149] font-bold text-[20px] leading-[24px] 14i:text-[32px] 14i:leading-[34px]">
+                                    class="text-[#5A4EAE] font-bold text-[20px] leading-[24px] 14i:text-[32px] 14i:leading-[34px]">
                                     NECK JOINT
                                 </p>
-                                <p class="text-[#262149] pt-5 pb-[30px] text-xs 14i:text-[20px] 14i:leading-[28px]">
+                                <p
+                                    class="text-[#5A4EAE] pt-5 pb-[30px] text-xs 14i:text-[20px] 14i:leading-[28px] truncate max-w-[300px] h-[28px]">
                                     Welcome to Dot
-                                    Clipping, your go-to <br class="hidden 15i:block">photo-editing agency
+                                    Clipping, your go-to photo-editing agency
                                     for all
                                     your
                                 </p>
-                                <p class="text-[#F76D4A] font-bold text-sm 14i:text-[22px]">Per Image $0.29</p>
+                                <p class="text-[#F76D4A] font-bold mt-[30px] text-sm 14i:text-[22px]">Per Image $0.29
+                                </p>
                             </div>
                             <div
                                 class="bg-[#EFEDF7] h-[calc(100vw-32px)] ml:h-[calc(100vw-64px)] mv:h-[calc(100vw-96px)] sm:h-[250px] xl:h-[300px] 14i:h-[350px] 15i:h-[437px] w-full rounded-b-[30px]">
@@ -276,22 +279,26 @@
                         </div>
                     </a>
 
+
+
                     <!-- service card 2 -->
                     <a href="./src/pages/service/serviceDetails.html">
                         <div class="w-full sm:w-[250px] xl:w-[300px] 14i:w-[350px] 15i:w-[437px]">
                             <div
                                 class="bg-[#FEFEFE] rounded-t-[35px] py-[20px] 14i:pt-[35px] 14i:pb-[30px] px-4 xl:px-6 15i:px-[30px]">
                                 <p
-                                    class="text-[#262149] font-bold text-[20px] leading-[24px] 14i:text-[32px] 14i:leading-[34px]">
+                                    class="text-[#5A4EAE] font-bold text-[20px] leading-[24px] 14i:text-[32px] 14i:leading-[34px]">
                                     NECK JOINT
                                 </p>
-                                <p class="text-[#262149] pt-5 pb-[30px] text-xs 14i:text-[20px] 14i:leading-[28px]">
+                                <p
+                                    class="text-[#5A4EAE] pt-5 pb-[30px] text-xs 14i:text-[20px] 14i:leading-[28px] truncate max-w-[300px] h-[28px]">
                                     Welcome to Dot
-                                    Clipping, your go-to <br class="hidden 15i:block">photo-editing agency
+                                    Clipping, your go-to photo-editing agency
                                     for all
                                     your
                                 </p>
-                                <p class="text-[#F76D4A] font-bold text-sm 14i:text-[22px]">Per Image $0.29</p>
+                                <p class="text-[#F76D4A] font-bold mt-[30px] text-sm 14i:text-[22px]">Per Image $0.29
+                                </p>
                             </div>
                             <div
                                 class="bg-[#EFEDF7] h-[calc(100vw-32px)] ml:h-[calc(100vw-64px)] mv:h-[calc(100vw-96px)] sm:h-[250px] xl:h-[300px] 14i:h-[350px] 15i:h-[437px] w-full rounded-b-[30px]">
@@ -306,16 +313,18 @@
                             <div
                                 class="bg-[#FEFEFE] rounded-t-[35px] py-[20px] 14i:pt-[35px] 14i:pb-[30px] px-4 xl:px-6 15i:px-[30px]">
                                 <p
-                                    class="text-[#262149] font-bold text-[20px] leading-[24px] 14i:text-[32px] 14i:leading-[34px]">
+                                    class="text-[#5A4EAE] font-bold text-[20px] leading-[24px] 14i:text-[32px] 14i:leading-[34px]">
                                     NECK JOINT
                                 </p>
-                                <p class="text-[#262149] pt-5 pb-[30px] text-xs 14i:text-[20px] 14i:leading-[28px]">
+                                <p
+                                    class="text-[#5A4EAE] pt-5 pb-[30px] text-xs 14i:text-[20px] 14i:leading-[28px] truncate max-w-[300px] h-[28px]">
                                     Welcome to Dot
-                                    Clipping, your go-to <br class="hidden 15i:block">photo-editing agency
+                                    Clipping, your go-to photo-editing agency
                                     for all
                                     your
                                 </p>
-                                <p class="text-[#F76D4A] font-bold text-sm 14i:text-[22px]">Per Image $0.29</p>
+                                <p class="text-[#F76D4A] font-bold mt-[30px] text-sm 14i:text-[22px]">Per Image $0.29
+                                </p>
                             </div>
                             <div
                                 class="bg-[#EFEDF7] h-[calc(100vw-32px)] ml:h-[calc(100vw-64px)] mv:h-[calc(100vw-96px)] sm:h-[250px] xl:h-[300px] 14i:h-[350px] 15i:h-[437px] w-full rounded-b-[30px]">
@@ -330,16 +339,18 @@
                             <div
                                 class="bg-[#FEFEFE] rounded-t-[35px] py-[20px] 14i:pt-[35px] 14i:pb-[30px] px-4 xl:px-6 15i:px-[30px]">
                                 <p
-                                    class="text-[#262149] font-bold text-[20px] leading-[24px] 14i:text-[32px] 14i:leading-[34px]">
+                                    class="text-[#5A4EAE] font-bold text-[20px] leading-[24px] 14i:text-[32px] 14i:leading-[34px]">
                                     NECK JOINT
                                 </p>
-                                <p class="text-[#262149] pt-5 pb-[30px] text-xs 14i:text-[20px] 14i:leading-[28px]">
+                                <p
+                                    class="text-[#5A4EAE] pt-5 pb-[30px] text-xs 14i:text-[20px] 14i:leading-[28px] truncate max-w-[300px] h-[28px]">
                                     Welcome to Dot
-                                    Clipping, your go-to <br class="hidden 15i:block">photo-editing agency
+                                    Clipping, your go-to photo-editing agency
                                     for all
                                     your
                                 </p>
-                                <p class="text-[#F76D4A] font-bold text-sm 14i:text-[22px]">Per Image $0.29</p>
+                                <p class="text-[#F76D4A] font-bold mt-[30px] text-sm 14i:text-[22px]">Per Image $0.29
+                                </p>
                             </div>
                             <div
                                 class="bg-[#EFEDF7] h-[calc(100vw-32px)] ml:h-[calc(100vw-64px)] mv:h-[calc(100vw-96px)] sm:h-[250px] xl:h-[300px] 14i:h-[350px] 15i:h-[437px] w-full rounded-b-[30px]">
@@ -354,16 +365,18 @@
                             <div
                                 class="bg-[#FEFEFE] rounded-t-[35px] py-[20px] 14i:pt-[35px] 14i:pb-[30px] px-4 xl:px-6 15i:px-[30px]">
                                 <p
-                                    class="text-[#262149] font-bold text-[20px] leading-[24px] 14i:text-[32px] 14i:leading-[34px]">
+                                    class="text-[#5A4EAE] font-bold text-[20px] leading-[24px] 14i:text-[32px] 14i:leading-[34px]">
                                     NECK JOINT
                                 </p>
-                                <p class="text-[#262149] pt-5 pb-[30px] text-xs 14i:text-[20px] 14i:leading-[28px]">
+                                <p
+                                    class="text-[#5A4EAE] pt-5 pb-[30px] text-xs 14i:text-[20px] 14i:leading-[28px] truncate max-w-[300px] h-[28px]">
                                     Welcome to Dot
-                                    Clipping, your go-to <br class="hidden 15i:block">photo-editing agency
+                                    Clipping, your go-to photo-editing agency
                                     for all
                                     your
                                 </p>
-                                <p class="text-[#F76D4A] font-bold text-sm 14i:text-[22px]">Per Image $0.29</p>
+                                <p class="text-[#F76D4A] font-bold mt-[30px] text-sm 14i:text-[22px]">Per Image $0.29
+                                </p>
                             </div>
                             <div
                                 class="bg-[#EFEDF7] h-[calc(100vw-32px)] ml:h-[calc(100vw-64px)] mv:h-[calc(100vw-96px)] sm:h-[250px] xl:h-[300px] 14i:h-[350px] 15i:h-[437px] w-full rounded-b-[30px]">
@@ -378,16 +391,18 @@
                             <div
                                 class="bg-[#FEFEFE] rounded-t-[35px] py-[20px] 14i:pt-[35px] 14i:pb-[30px] px-4 xl:px-6 15i:px-[30px]">
                                 <p
-                                    class="text-[#262149] font-bold text-[20px] leading-[24px] 14i:text-[32px] 14i:leading-[34px]">
+                                    class="text-[#5A4EAE] font-bold text-[20px] leading-[24px] 14i:text-[32px] 14i:leading-[34px]">
                                     NECK JOINT
                                 </p>
-                                <p class="text-[#262149] pt-5 pb-[30px] text-xs 14i:text-[20px] 14i:leading-[28px]">
+                                <p
+                                    class="text-[#5A4EAE] pt-5 pb-[30px] text-xs 14i:text-[20px] 14i:leading-[28px] truncate max-w-[300px] h-[28px]">
                                     Welcome to Dot
-                                    Clipping, your go-to <br class="hidden 15i:block">photo-editing agency
+                                    Clipping, your go-to photo-editing agency
                                     for all
                                     your
                                 </p>
-                                <p class="text-[#F76D4A] font-bold text-sm 14i:text-[22px]">Per Image $0.29</p>
+                                <p class="text-[#F76D4A] font-bold mt-[30px] text-sm 14i:text-[22px]">Per Image $0.29
+                                </p>
                             </div>
                             <div
                                 class="bg-[#EFEDF7] h-[calc(100vw-32px)] ml:h-[calc(100vw-64px)] mv:h-[calc(100vw-96px)] sm:h-[250px] xl:h-[300px] 14i:h-[350px] 15i:h-[437px] w-full rounded-b-[30px]">
@@ -446,8 +461,9 @@
                 </p>
                 <p
                     class="text-[#262149] text-center max-w-[670px] mx-auto text-sm lg:text-lg 15i:text-xl pt-4 pb-8 14i:pt-[30px] 14i:pb-[60px]">
-                    Welcome to Dot Clipping, your go-to photo-editing agency for all your image editing needs. At Dot
-                    Clipping, we understand Welcome
+                    View our work sample to see stunning visuals, creative Works, and successful project completions
+                    tailored to
+                    industry-specific needs.
                 </p>
             </div>
 
@@ -642,9 +658,9 @@
                 </p>
                 <p
                     class="text-[#262149] text-center max-w-[670px] mx-auto text-sm lg:text-lg 15i:text-xl pt-4 pb-8 14i:pt-[40px] 14i:pb-[80px]">
-                    Welcome to Dot Clipping, your go-to photo-editing agency for all your image editing needs. At Dot
-                    Clipping, we
-                    understand Welcome
+                    Select us for top-notch photo editing; we transform your images with professional care, ensuring
+                    perfection in every
+                    detail.
                 </p>
             </div>
 
@@ -653,90 +669,97 @@
                 <!-- cause 1 -->
                 <div
                     class="bg-[#F8F8F1] text-center py-10 px-[36px] rounded-[30px] w-full ml:w-[400px] sm:w-[450px] md:w-[320px] lg:w-[400px] 15i:w-[428px]">
-                    <div class="mb-10 mx-auto rounded-full h-20 w-20">
+                    <div class="mb-5 15i:mb-[50px] mx-auto rounded-full h-20 w-20">
                         <img src="./assets/icon1.png" alt="ellipse" class="h-full w-full rounded-full">
                     </div>
                     <p class="text-[#F76D4A] font-bold text-[22px] leading-[28px]">
-                        Why Choose Us
+                        Start with free trial
                     </p>
-                    <p class="text-[#262149]">
-                        Welcome to Dot Clipping, your go-to photo-editing agency for all your image editing needs. At
-                        Dot Clipping, we understand Welcome
+                    <p class="text-[#5A4EAE] mt-2 15i:mt-5 15i:text-xl">
+                        Experience top-notch photo editing with our free trial. Perfect your images and explore premium
+                        features risk-free.
+                        Start with us now. Try it free today.
                     </p>
                 </div>
 
                 <!-- cause 2 -->
                 <div
                     class="bg-[#F8F8F1] text-center py-10 px-[36px] rounded-[30px] w-full ml:w-[400px] sm:w-[450px] md:w-[320px] lg:w-[400px] 15i:w-[428px]">
-                    <div class="mb-10 mx-auto rounded-full h-20 w-20">
+                    <div class="mb-5 15i:mb-[50px] mx-auto rounded-full h-20 w-20">
                         <img src="./assets/icon2.png" alt="ellipse" class="h-full w-full rounded-full">
                     </div>
                     <p class="text-[#F76D4A] font-bold text-[22px] leading-[28px]">
                         Why Choose Us
                     </p>
-                    <p class="text-[#262149]">
-                        Welcome to Dot Clipping, your go-to photo-editing agency for all your image editing needs. At
-                        Dot Clipping, we understand Welcome
+                    <p class="text-[#5A4EAE] mt-2 15i:mt-5 15i:text-xl">
+                        Need photo editing assistance anytime? Our 24/7 customer care ensures prompt support and
+                        quality
+                        service for your image
+                        enhancement needs.
                     </p>
                 </div>
 
                 <!-- cause 3 -->
                 <div
                     class="bg-[#F8F8F1] text-center py-10 px-[36px] rounded-[30px] w-full ml:w-[400px] sm:w-[450px] md:w-[320px] lg:w-[400px] 15i:w-[428px]">
-                    <div class="mb-10 mx-auto rounded-full h-20 w-20">
+                    <div class="mb-5 15i:mb-[50px] mx-auto rounded-full h-20 w-20">
                         <img src="./assets/icon3.png" alt="ellipse" class="h-full w-full rounded-full">
                     </div>
                     <p class="text-[#F76D4A] font-bold text-[22px] leading-[28px]">
                         Why Choose Us
                     </p>
-                    <p class="text-[#262149]">
-                        Welcome to Dot Clipping, your go-to photo-editing agency for all your image editing needs. At
-                        Dot Clipping, we understand Welcome
+                    <p class="text-[#5A4EAE] mt-2 15i:mt-5 15i:text-xl">
+                        Achieve stunning visuals with our high-quality photo editing services, offering meticulous
+                        attention to detail and
+                        superior results.
                     </p>
                 </div>
 
                 <!-- cause 4 -->
                 <div
                     class="bg-[#F8F8F1] text-center py-10 px-[36px] rounded-[30px] w-full ml:w-[400px] sm:w-[450px] md:w-[320px] lg:w-[400px] 15i:w-[428px]">
-                    <div class="mb-10 mx-auto rounded-full h-20 w-20">
+                    <div class="mb-5 15i:mb-[50px] mx-auto rounded-full h-20 w-20">
                         <img src="./assets/icon4.png" alt="ellipse" class="h-full w-full rounded-full">
                     </div>
                     <p class="text-[#F76D4A] font-bold text-[22px] leading-[28px]">
                         Why Choose Us
                     </p>
-                    <p class="text-[#262149]">
-                        Welcome to Dot Clipping, your go-to photo-editing agency for all your image editing needs. At
-                        Dot Clipping, we understand Welcome
+                    <p class="text-[#5A4EAE] mt-2 15i:mt-5 15i:text-xl">
+                        Clear and honest photo editing pricing. No hidden fees, just straightforward rates to enhance
+                        your images with
+                        transparency and trust.
                     </p>
                 </div>
 
                 <!-- cause 5 -->
                 <div
                     class="bg-[#F8F8F1] text-center py-10 px-[36px] rounded-[30px] w-full ml:w-[400px] sm:w-[450px] md:w-[320px] lg:w-[400px] 15i:w-[428px]">
-                    <div class="mb-10 mx-auto rounded-full h-20 w-20">
+                    <div class="mb-5 15i:mb-[50px] mx-auto rounded-full h-20 w-20">
                         <img src="./assets/icon5.png" alt="ellipse" class="h-full w-full rounded-full">
                     </div>
                     <p class="text-[#F76D4A] font-bold text-[22px] leading-[28px]">
                         Why Choose Us
                     </p>
-                    <p class="text-[#262149]">
-                        Welcome to Dot Clipping, your go-to photo-editing agency for all your image editing needs. At
-                        Dot Clipping, we understand Welcome
+                    <p class="text-[#5A4EAE] mt-2 15i:mt-5 15i:text-xl">
+                        Efficient photo editing with on-time delivery. Trust our expert team for high-quality edits and
+                        prompt service to meet
+                        your deadlines
                     </p>
                 </div>
 
                 <!-- cause 6 -->
                 <div
                     class="bg-[#F8F8F1] text-center py-10 px-[36px] rounded-[30px] w-full ml:w-[400px] sm:w-[450px] md:w-[320px] lg:w-[400px] 15i:w-[428px]">
-                    <div class="mb-10 mx-auto rounded-full h-20 w-20">
+                    <div class="mb-5 15i:mb-[50px] mx-auto rounded-full h-20 w-20">
                         <img src="./assets/icon6.png" alt="ellipse" class="h-full w-full rounded-full">
                     </div>
                     <p class="text-[#F76D4A] font-bold text-[22px] leading-[28px]">
                         Why Choose Us
                     </p>
-                    <p class="text-[#262149]">
-                        Welcome to Dot Clipping, your go-to photo-editing agency for all your image editing needs. At
-                        Dot Clipping, we understand Welcome
+                    <p class="text-[#5A4EAE] mt-2 15i:mt-5 15i:text-xl">
+                        Enjoy unlimited revisions on photo edits with our professional team. We work tirelessly to
+                        perfect your images until
+                        you’re satisfied.
                     </p>
                 </div>
             </div>
@@ -758,11 +781,11 @@
                 <div
                     class="bg-[#FDF9D8] rounded-[30px] flex flex-col justify-center items-center px-4 w-full max-w-[437px] h-[150px] sm:h-[100px] sm:w-[200px] md:w-[220px] md:h-[120px] lg:w-[w-[290px] lg:h-[150px] xl:w-[320px] 14i:w-[360px] 14i:h-[200px] 15i:w-[437px] 15i:h-[250px]">
                     <p
-                        class="text-[#262149] font-bold text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 14i:text-[88px] 14i:leading-[92px] text-center">
-                        241
+                        class="text-[#5A4EAE] font-bold text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 14i:text-[88px] 14i:leading-[92px] text-center">
+                        1.2M
                     </p>
-                    <p class="text-[#262149] sm:text-xs md:text-sm 14i:text-xl text-center">
-                        Welcome to Dot Clipping, your
+                    <p class="text-[#5A4EAE] sm:text-xs md:text-sm 14i:text-xl text-center">
+                        We’ve edited 1.2 million images over the past 4 years with precision
                     </p>
                 </div>
 
@@ -770,11 +793,12 @@
                 <div
                     class="bg-[#FDF9D8] rounded-[30px] flex flex-col justify-center items-center px-4 w-full max-w-[437px] h-[150px] sm:h-[100px] sm:w-[200px] md:w-[220px] md:h-[120px] lg:w-[w-[290px] lg:h-[150px] xl:w-[320px] 14i:w-[360px] 14i:h-[200px] 15i:w-[437px] 15i:h-[250px]">
                     <p
-                        class="text-[#262149] font-bold text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 14i:text-[88px] 14i:leading-[92px] text-center">
-                        241
+                        class="text-[#5A4EAE] font-bold text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 14i:text-[88px] 14i:leading-[92px] text-center">
+                        4+
                     </p>
-                    <p class="text-[#262149] sm:text-xs md:text-sm 14i:text-xl text-center">
-                        Welcome to Dot Clipping, your
+                    <p class="text-[#5A4EAE] sm:text-xs md:text-sm 14i:text-xl text-center">
+                        With over 4 years of <br>
+                        experience in image editing
                     </p>
                 </div>
 
@@ -782,11 +806,12 @@
                 <div
                     class="bg-[#FDF9D8] rounded-[30px] flex flex-col justify-center items-center px-4 w-full max-w-[437px] h-[150px] sm:h-[100px] sm:w-[200px] md:w-[220px] md:h-[120px] lg:w-[w-[290px] lg:h-[150px] xl:w-[320px] 14i:w-[360px] 14i:h-[200px] 15i:w-[437px] 15i:h-[250px]">
                     <p
-                        class="text-[#262149] font-bold text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 14i:text-[88px] 14i:leading-[92px] text-center">
-                        241
+                        class="text-[#5A4EAE] font-bold text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 14i:text-[88px] 14i:leading-[92px] text-center">
+                        6
                     </p>
-                    <p class="text-[#262149] sm:text-xs md:text-sm 14i:text-xl text-center">
-                        Welcome to Dot Clipping, your
+                    <p class="text-[#5A4EAE] sm:text-xs md:text-sm 14i:text-xl text-center">
+                        We proudly serve clients <br>
+                        across 6 countries globally
                     </p>
                 </div>
             </div>
@@ -821,11 +846,10 @@
                                     Ensure High Quality
                                 </p>
                                 <p class="text-[#262149] text-sm 14i:text-xl pt-4 md:pt-6 14i:pt-[28px]">
-                                    onsectetur adipiscing elit, sed do eiusm onsectetur adipiscing elit, sed do eiusm od
-                                    tempor incididunt utlabore. Adipiscing elit, sed do eiusm consectetur  aonsectetur
-                                    sed do eiusm od tempor adipiscing elit, sed do eiusm od tempor. Consectetur
-                                    adipiscing elit, sed do eiusm onsectetur adipiscing elit, sed do eiusm od tempor
-                                    incididunt ut labore. Consectetur adipiscing
+                                    Omnic Clipper provided exceptional photo editing that truly transformed my images.
+                                    Their expertise and efficiency were
+                                    impressive. I’m extremely satisfied with the outcome and would recommend them to
+                                    anyone.
                                 </p>
 
                                 <div class="py-6 md:py-12 14i:py-20">
@@ -919,13 +943,14 @@
         <section id="contact" class="bg-[#EFEDF7] px-4 py-8 md:px-12 md:py-20 15i:py-[120px]">
             <!-- heading -->
             <div>
-                <p class="text-[#262149] text-center font-bold text-3xl lg:text-5xl 14i:text-[88px] 14i:leading-[92px]">
+                <p class="text-[#5A4EAE] text-center font-bold text-3xl lg:text-5xl 14i:text-[88px] 14i:leading-[92px]">
                     Contact Us
                 </p>
                 <p
                     class="text-[#262149] text-center max-w-[670px] mx-auto text-sm lg:text-lg 15i:text-xl pt-4 pb-8 14i:pt-[34px] 14i:pb-[60px]">
-                    Welcome to Dot Clipping, your go-to photo-editing agency for all your image editing needs. At Dot
-                    Clipping, we understand Welcome
+                    Connect with us for premium photo editing. We deliver exceptional quality and attention to detail.
+                    Contact our experts
+                    now.
                 </p>
             </div>
 
@@ -960,9 +985,9 @@
                         <img src="./assets/White Logo.png" alt="logo" class="h-8 md:h-12 15i:h-[65px]">
                     </div>
                     <p class="max-w-[277px] text-[#EFEDF7] text-xs sm:text-sm md:text-[16px] 14i:text-xl mt-[26px]">
-                        A quick and efficient digital photo editing platform designed for photographers and
-                        e-businesses, streamlining your
-                        workflow and enhancing your images with ease.
+                        A fast and efficient digital photo editing platform designed for photographers and e-businesses
+                        seeking high-quality,
+                        professional results effortlessly.
                     </p>
                 </div>
 
@@ -1037,7 +1062,7 @@
             </div>
 
             <div
-                class="text-[#FEFEFE] text-sm md:text-lg 14i:text-xl flex flex-col-reverse lg:flex-row justify-center lg:justify-between items-center gap-4 my-[45px] pt-[30px] 14i:pt-[50px] border-t-[1px] border-[#FEFEFE]">
+                class="font-axiforma text-[#FEFEFE] text-sm md:text-lg 14i:text-xl flex flex-col-reverse lg:flex-row justify-center lg:justify-between items-center gap-4 my-[45px] pt-[30px] 14i:pt-[50px] border-t-[1px] border-[#FEFEFE]">
                 <p class="text-center lg:text-start">
                     © Copyright 2023, All Rights Reserved by Omnic Clipper
                 </p>
@@ -1118,6 +1143,7 @@
         //typewriter---------------------
         const texts = ["Smmetric"];
         const speed = 150; // typing speed in milliseconds
+        const delayAfterTyping = 1000; // delay after typing the full text (in milliseconds)
         let textIndex = 0;
         let charIndex = 0;
         let isDeleting = false;
@@ -1130,20 +1156,25 @@
                 typewriterText.innerHTML += currentText.charAt(charIndex);
                 charIndex++;
                 setTimeout(type, speed);
+            } else if (!isDeleting && charIndex === currentText.length) {
+                // Delay after typing the full text
+                setTimeout(() => {
+                    isDeleting = true;
+                    setTimeout(type, speed);
+                }, delayAfterTyping);
             } else if (isDeleting && charIndex > 0) {
                 typewriterText.innerHTML = currentText.substring(0, charIndex - 1);
                 charIndex--;
                 setTimeout(type, speed);
             } else {
-                isDeleting = !isDeleting;
-                if (!isDeleting) {
-                    textIndex = (textIndex + 1) % texts.length;
-                }
+                isDeleting = false;
+                textIndex = (textIndex + 1) % texts.length;
                 setTimeout(type, speed);
             }
         }
 
         window.onload = type;
+
 
     </script>
 </body>

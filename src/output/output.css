@@ -636,6 +636,10 @@ video {
   position: relative;
 }
 
+.sticky {
+  position: sticky;
+}
+
 .bottom-0 {
   bottom: 0px;
 }
@@ -678,6 +682,10 @@ video {
 
 .z-\[5000\] {
   z-index: 5000;
+}
+
+.z-\[10000\] {
+  z-index: 10000;
 }
 
 .mx-auto {
@@ -741,6 +749,22 @@ video {
 
 .mt-\[36px\] {
   margin-top: 36px;
+}
+
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
+.mb-\[120px\] {
+  margin-bottom: 120px;
+}
+
+.mt-\[30px\] {
+  margin-top: 30px;
+}
+
+.mt-\[57px\] {
+  margin-top: 57px;
 }
 
 .box-border {
@@ -821,6 +845,10 @@ video {
 
 .h-screen {
   height: 100vh;
+}
+
+.h-\[28px\] {
+  height: 28px;
 }
 
 .w-0 {
@@ -914,6 +942,10 @@ video {
 
 .max-w-\[774px\] {
   max-width: 774px;
+}
+
+.max-w-\[300px\] {
+  max-width: 300px;
 }
 
 .flex-1 {
@@ -1095,6 +1127,12 @@ video {
 
 .overflow-x-hidden {
   overflow-x: hidden;
+}
+
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .rounded-2xl {
@@ -3070,6 +3108,14 @@ video {
 
   .\31 5i\:mt-\[36px\] {
     margin-top: 36px;
+  }
+
+  .\31 5i\:mb-\[50px\] {
+    margin-bottom: 50px;
+  }
+
+  .\31 5i\:mt-5 {
+    margin-top: 1.25rem;
   }
 
   .\31 5i\:block {
