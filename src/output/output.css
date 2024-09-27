@@ -676,16 +676,16 @@ video {
   z-index: 10;
 }
 
+.z-\[10000\] {
+  z-index: 10000;
+}
+
 .z-\[1000\] {
   z-index: 1000;
 }
 
 .z-\[5000\] {
   z-index: 5000;
-}
-
-.z-\[10000\] {
-  z-index: 10000;
 }
 
 .mx-auto {
@@ -698,21 +698,20 @@ video {
   margin-bottom: 45px;
 }
 
-.my-\[57px\] {
-  margin-top: 57px;
-  margin-bottom: 57px;
-}
-
-.mb-10 {
-  margin-bottom: 2.5rem;
-}
-
 .mb-4 {
   margin-bottom: 1rem;
 }
 
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
 .mb-8 {
   margin-bottom: 2rem;
+}
+
+.mb-\[120px\] {
+  margin-bottom: 120px;
 }
 
 .mt-12 {
@@ -747,20 +746,12 @@ video {
   margin-top: 26px;
 }
 
-.mt-\[36px\] {
-  margin-top: 36px;
-}
-
-.mb-5 {
-  margin-bottom: 1.25rem;
-}
-
-.mb-\[120px\] {
-  margin-bottom: 120px;
-}
-
 .mt-\[30px\] {
   margin-top: 30px;
+}
+
+.mt-\[36px\] {
+  margin-top: 36px;
 }
 
 .mt-\[57px\] {
@@ -811,6 +802,10 @@ video {
   height: 275px;
 }
 
+.h-\[28px\] {
+  height: 28px;
+}
+
 .h-\[300px\] {
   height: 300px;
 }
@@ -845,10 +840,6 @@ video {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-\[28px\] {
-  height: 28px;
 }
 
 .w-0 {
@@ -924,6 +915,10 @@ video {
   max-width: 277px;
 }
 
+.max-w-\[300px\] {
+  max-width: 300px;
+}
+
 .max-w-\[437px\] {
   max-width: 437px;
 }
@@ -942,10 +937,6 @@ video {
 
 .max-w-\[774px\] {
   max-width: 774px;
-}
-
-.max-w-\[300px\] {
-  max-width: 300px;
 }
 
 .flex-1 {
@@ -1123,6 +1114,10 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(54px * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(54px * var(--tw-space-y-reverse));
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .overflow-x-hidden {
@@ -3098,8 +3093,16 @@ video {
     margin-bottom: 5rem;
   }
 
+  .\31 5i\:mb-\[50px\] {
+    margin-bottom: 50px;
+  }
+
   .\31 5i\:mt-20 {
     margin-top: 5rem;
+  }
+
+  .\31 5i\:mt-5 {
+    margin-top: 1.25rem;
   }
 
   .\31 5i\:mt-\[107px\] {
@@ -3108,14 +3111,6 @@ video {
 
   .\31 5i\:mt-\[36px\] {
     margin-top: 36px;
-  }
-
-  .\31 5i\:mb-\[50px\] {
-    margin-bottom: 50px;
-  }
-
-  .\31 5i\:mt-5 {
-    margin-top: 1.25rem;
   }
 
   .\31 5i\:block {
@@ -3340,6 +3335,11 @@ video {
   .\31 5i\:py-\[60px\] {
     padding-top: 60px;
     padding-bottom: 60px;
+  }
+
+  .\31 5i\:px-\[138px\] {
+    padding-left: 138px;
+    padding-right: 138px;
   }
 
   .\31 5i\:pb-\[20px\] {
