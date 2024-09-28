@@ -2089,6 +2089,10 @@ video {
     flex-direction: row-reverse;
   }
 
+  .md\:flex-col-reverse {
+    flex-direction: column-reverse;
+  }
+
   .md\:items-start {
     align-items: flex-start;
   }
@@ -2103,6 +2107,10 @@ video {
 
   .md\:justify-center {
     justify-content: center;
+  }
+
+  .md\:justify-between {
+    justify-content: space-between;
   }
 
   .md\:gap-10 {
@@ -3267,6 +3275,11 @@ video {
     padding-right: 120px;
   }
 
+  .\31 5i\:px-\[138px\] {
+    padding-left: 138px;
+    padding-right: 138px;
+  }
+
   .\31 5i\:px-\[214px\] {
     padding-left: 214px;
     padding-right: 214px;
@@ -3335,11 +3348,6 @@ video {
   .\31 5i\:py-\[60px\] {
     padding-top: 60px;
     padding-bottom: 60px;
-  }
-
-  .\31 5i\:px-\[138px\] {
-    padding-left: 138px;
-    padding-right: 138px;
   }
 
   .\31 5i\:pb-\[20px\] {
